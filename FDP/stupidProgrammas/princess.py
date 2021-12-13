@@ -1,39 +1,45 @@
+#!/usr/bin/env python3
+
 import os
 import time
 
+grid = [["-" for i in range(10)] for j in range(10)]
+grid[9][9] = "m"  # Mario
+grid[0][0] = "p"  # princess
+mario = [9, 9]
+princesa = [0, 0]
+obstaculo = [3, 4]
 
-def empieza(matrix):
-    global mario
-    global peach
+
+while True:
+
+    grid[mario[0]][mario[1]] = "-"  # Resetea la última posición con -
+    if mario[0] == princesa[0] and mario[1] > princesa[1]:
+        # print("izquiera")
+        mario[1] -= 1  # izquierda
+    elif mario[0] == princesa[0] and mario[1] < princesa[1]:
+        # print("derecha")
+        mario[1] += 1  # Derecha
+    elif mario[0] > princesa[0]:
+        # print("sube")
+        mario[0] -= 1  # subir
+    elif mario[0] < princesa[0]:
+        # print("baja")
+        mario[0] += 1  # bajar
+
+    if mario[0] != princesa[0] or mario[1] != princesa[1]:
+        grid[mario[0]][mario[1]] = "m"  # Actualiza la posición de m
+    else:
+        grid[mario[0]][mario[1]] = "mp"  # Actualiza la posición de m
+    time.sleep(1)
+
     os.system("clear")
-    # print(matrix)
-    for indice1, i in enumerate(matrix):
-        for indice2, j in enumerate(i):
-            if j == "p":
-                peach = [indice1, indice2]
-
-            if j == "m":
-                mario = [indice1, indice2]
+    for i in grid:
+        for j in i:
             print(j, end=" ")
         print()
+
+    # print(mario, princesa)
     print("\n")
-    while mario[0] != peach[0] or mario[1] != peach[1]:
-        if mario[0] > peach[0] and mario[1] != peach[1]:
-            matrix[mario[0]][mario[1]] = "-"
-            mario[0] -= 1
-            matrix[mario[0]][mario[1]] = "m"
-        elif mario[0] == peach[0] and mario[1] < peach[1]:
-            matrix[mario[0]][mario[1]] = "-"
-            mario[1] += 1
-            matrix[mario[0]][mario[1]] = "mp"
-            # I need to fix this :(
-
-        for indice1, i in enumerate(matrix):
-            for indice2, j in enumerate(i):
-                print(j, end=" ")
-            print()
-        print("\n", mario, peach)
-
-
-grid = [["-", "-", "p"], ["-", "m", "-"], ["-", "-", "-"]]
-empieza(grid)
+    if grid[mario[0]][mario[1]] == "mp":
+        break

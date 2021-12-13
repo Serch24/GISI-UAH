@@ -25,7 +25,7 @@ def obtener_tiempo_transcurrido_formateado():
 
 
 def refrescar_tiempo_transcurrido():
-    print("Refrescando!")
+    # print("Refrescando!")
     variable_hora_actual.set(obtener_tiempo_transcurrido_formateado())
     raiz.after(INTERVALO_REFRESCO, refrescar_tiempo_transcurrido)
 

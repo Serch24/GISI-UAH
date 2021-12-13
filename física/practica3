@@ -1,0 +1,45 @@
+# Comparador
+
+A. Para qué sirven las cascading inputs? Si los números a comparar son de
+4 bits, y se desea que cuando son iguales solamente  se active la salida
+A=B ¿a qué valor hay que conectar las cascading inputs?
+
+R// Los cascading inputs comparan el bit menos significativo, pero serán ingnorados cuando A > B o A < B.
+	Hay que conectar 3 cables, en pin 2, 3 y 4, y sería 0 1 0
+
+
+B. ¿Qué valor tendrán las salidas del comparador cuando el dato A sea mayor
+al dato B?
+
+R// 1 0 0
+
+# lógica de conexión entre el comparador y el multiplexor
+
+A. ¿Cómo   se   deben   conectar   las   salidas   del   comparador   con   la   entrada
+select del   multiplexor   de   tal   forma   que   a   la   salida   del   éste   aparezca   el
+mayor de los números A, B? (cuadro LÓGICA de la Figura 3)
+
+R// S'A + SB, select debe estar en 0 y A tiene que ser mayor para que se encienda el led, o select tiene que ser
+	1 y B tiene que ser mayor que A, si no se cumple ninguna no se encenderá el led.
+# decodificador y display de ánodo común
+
+A. A   qué   valor   hay   que   conectar   las   entradas   LT,   BI/RBO   y   RBI   para
+visualizar siempre el dígito de la entrada, cualquiera que sea su valor?
+
+R// LT = 1, RBI = 1 y BI=X
+
+B. A qué valor de tensión se debe conectar el ánodo común del display?
+
+R// 5v
+
+C. ¿Qué valor proporciona el decodificador en las salidas en las que se deben
+iluminar los LEDs del display?
+
+R// con 0
+
+
+
+
+# LT = Lamp test 
+# RBI = Ripple-blanking output, a tierra si es el primer display
+# BI = Blanking input 

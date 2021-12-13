@@ -133,3 +133,6 @@ po/*~
 # End of https://www.toptal.com/developers/gitignore/api/r
 
 *.mp*
+*.txt*
+*.exe*
+*.doc*
