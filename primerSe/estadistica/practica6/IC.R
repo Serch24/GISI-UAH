@@ -30,38 +30,6 @@ ic.proporcion <- function(ng, n,nivelConfianza){
   c(li, ls)
 }
 
-#funcion intervalo confianza media poblacional
-ic.media = function (muestra,nivel.confianza){
-  n=length(muestra)
-  m=mean(muestra)
-  s=sd(muestra)
-  alfa=1-nivel.confianza
-  if (n>30){
-    print("Grande")
-    z=qnorm(1-alfa/2,0,1)
-    li=m-z*s/sqrt(n)
-    ls=m+z*s/sqrt(n)
-  }
-  else{
-    t=qt(1-alfa/2,n-1)
-    li=m-t*s/sqrt(n)
-    ls=m+t*s/sqrt(n)
-  }
-  c(li,ls)
-}
-datos=1:10
-ic.media(datos,0.95)
-
-#funcion intervalo de proporcion poblacional
-ic.proporcion=function(ng,n,nivel.confianza){
-  p=ng/n
-  alfa=1-nivel.confianza
-  z=qnorm(1-alfa/2)
-  li=p-z*sqrt(p*(1-p)/n)
-  ls=p+z*sqrt(p*(1-p)/n)
-  c(li,ls)
-}
-
 #funcion intervalo diferencia medias
 ic.dif.medias=function(muestra1,muestra2,nivel.confianza,pareados=FALSE){
   alfa= 1 - nivel.confianza
@@ -106,4 +74,15 @@ ic.dif.proporciones <- function(ng, n, nivel.confianza){
  ls <- p1 - p2 + z * sqrt((p1*(1 - p1)/ n1) + (p2 * (1 - p2) / n2))
  
  c(li, ls)
+}
+
+ic.varianza = function(muestra, nivel.confianza) {
+  alfa=1-nivel.confianza
+  n=length(muestra)
+  s=sd(muestra)
+  chi.li=qchisq(1-alfa/2,n-1)
+  chi.ls=qchisq(alfa/2,n-1)
+  li=((n-1)*s**2)/chi.li
+  ls=((n-1)*s**2)/chi.ls
+  c(li,ls)
 }

@@ -136,3 +136,8 @@ po/*~
 *.txt*
 *.exe*
 *.doc*
+/segundSe/programacion/primerProyecto/target/
+/segundSe/programacion/testSerch/target/
+/segundSe/programacion/Sesion1/target/
+/segundSe/programacion/cosasVarias/target/
+/segundSe/programacion/sesion3/target/
