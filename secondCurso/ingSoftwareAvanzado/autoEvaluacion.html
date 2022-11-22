@@ -1,0 +1,4258 @@
+<!DOCTYPE html>
+<!-- review.jsp -->
+<html class="ally-learn-version-3900-52-0 ally-learn-version-3900-52-x ally-learn-version-3900-x-x" lang="es-ES"><head>
+  <title>Revisar entrega de examen: Autoevaluación 1 – 2022-23: ...</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta id="request-method" name="request-method" content="GET">
+  <meta name="author" content="Blackboard">
+  <meta name="copyright" content="© 1997-2022 Blackboard Inc. Todos los derechos reservados. Número de patente 7.493.396 y 7.558.853 de Estados Unidos. Resto de patentes en trámite.">
+  <meta name="keywords" content="Blackboard">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="-1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+<script type="text/javascript" src="testa_files/232bf20b67"></script><script src="testa_files/nr-1216.min.js"></script><script type="text/javascript" async="" src="testa_files/analytics.js"></script><script type="text/javascript" async="" src="testa_files/js_002.js"></script><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"232bf20b67",applicationID:"370031624"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(9),c=t(10),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(11);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(8),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],7:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],8:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],9:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],10:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],11:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(9),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!M++){var t=T.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(x,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+T.offset],null,"api"),c("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=l+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){c("mark",["domContent",a()+T.offset],null,"api")}var a=t(5),c=t("handle"),f=t(9),u=t("ee"),s=t(7),d=t(2),p=t(3),l=d.getConfiguration("ssl")===!1?"http":"https",v=window,m=v.document,g="addEventListener",y="attachEvent",h=v.XMLHttpRequest,w=h&&h.prototype,b=!1;NREUM.o={ST:setTimeout,SI:v.setImmediate,CT:clearTimeout,XHR:h,REQ:v.Request,EV:v.Event,PR:v.Promise,MO:v.MutationObserver};var E=""+location,x={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},O=h&&w&&w[g]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:s,disabled:b};if(!b){t(1),t(6),m[g]?(m[g]("DOMContentLoaded",o,p(!1)),v[g]("load",r,p(!1))):(m[y]("onreadystatechange",i),v[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var M=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(10),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+  <link rel="SHORTCUT ICON" type="image/x-icon" href="https://learn.content.blackboardcdn.com/3900.52.0-rel.22+0f5d4f9/ui/bb-icon3.ico">
+     <link rel="stylesheet" type="text/css" href="testa_files/shared.css" id="css_0">
+     <link rel="stylesheet" type="text/css" href="testa_files/theme.css" id="css_1">
+     <link rel="stylesheet" type="text/css" href="testa_files/app_nav.css" id="css_2">
+     <link rel="stylesheet" type="text/css" href="testa_files/jquery-ui.min.css" id="css_3">
+     <link rel="stylesheet" type="text/css" href="testa_files/assessment.css" id="css_4">
+     <link rel="stylesheet" type="text/css" href="testa_files/assessment_002.css" id="css_5">
+     <link rel="stylesheet" type="text/css" href="testa_files/grading_002.css" id="css_6">
+     <link rel="stylesheet" type="text/css" href="testa_files/grading.css" id="css_7">
+     <link rel="stylesheet" type="text/css" href="testa_files/prism.css" id="css_8">
+     <link rel="stylesheet" type="text/css" href="testa_files/video-integration.css" id="css_9">
+     <link rel="stylesheet" type="text/css" href="testa_files/ally-integration.css" id="css_10">
+          
+       <link rel="stylesheet" type="text/css" media="print" href="testa_files/print.css">
+    <script type="text/javascript" src="testa_files/i18n.js"></script>
+      <script language="javascript" type="text/javascript">
+
+var JS_RESOURCES = new Object();
+
+function _init_bundle_JS_RESOURCES() {
+
+    JS_RESOURCES['validation.email'] = 'Se debe introducir una dirección de correo electrónico completa (por ejemplo, info@blackboard.com).';
+    JS_RESOURCES['validation.radio.required'] = 'Para continuar, realice una selección.';
+    JS_RESOURCES['assessment.incomplete.confirm.backtrackProhibited.survey'] = 'Las siguientes preguntas podrían estar incompletas:\n {0}\nHaga clic en Cancelar para volver a la encuesta. Haga clic en Aceptar para guardar la respuesta incompleta.';
+    JS_RESOURCES['common.list.separator.comma'] = '{0}, {1}';
+    JS_RESOURCES['active.filter.search.terms'] = 'Términos de búsqueda';
+    JS_RESOURCES['validation.points.decimal.places.error.location'] = 'Los valores en puntos pueden tener 5 lugares decimales como máximo: {0}.';
+    JS_RESOURCES['validation.maximum_length.plural'] = 'No debe contener más de {1} caracteres: {0}.\nReduzca el tamaño de la entrada en {2} caracteres.';
+    JS_RESOURCES['assessment.incomplete.confirm.backtrackProhibited'] = 'Las siguientes preguntas podrían estar incompletas:\n {0}\nHaga clic en Cancelar para volver a al examen Haga clic en Aceptar para guardar la respuesta incompleta.';
+    JS_RESOURCES['validation.multiSelect.minItems'] = 'El cuadro de multiselección debe contener al menos {0} elementos.';
+    JS_RESOURCES['validation.cmp_field.required'] = 'Se debe proporcionar un valor de {0}\ncuando el campo {1} no está vacío';
+    JS_RESOURCES['warning.email'] = 'La dirección de correo electrónico es un campo recomendado. Los usuarios no podrán utilizar ciertas partes del sistema sin una dirección de correo electrónico.';
+    JS_RESOURCES['validation.maximum_length.no_name.singular'] = 'No debe contener más de {0} caracteres.\nReducir el tamaño de la entrada en un carácter.';
+    JS_RESOURCES['validation.multiSelect.maxItems'] = 'El cuadro de multiselección no debe contener más de {0} elementos.';
+    JS_RESOURCES['validation.number'] = 'Se debe introducir un valor numérico válido: {0}.';
+    JS_RESOURCES['validation.date.required'] = 'Es necesario proporcionar un valor de fecha completo: {0}.';
+    JS_RESOURCES['portalmodule.section.remove'] = '¿Eliminar: {0}?';
+    JS_RESOURCES['show.helptext'] = 'Mostrar texto de ayuda';
+    JS_RESOURCES['validation.password'] = 'La contraseña no puede estar vacía ni contener solo espacios.';
+    JS_RESOURCES['validation.percent'] = 'Se debe introducir un valor de porcentaje entre 0 y 100 válido.';
+    JS_RESOURCES['validation.mismatch'] = 'Los valores que introdujo no coinciden: {0}.\nConfirmar: {0}.';
+    JS_RESOURCES['validation.maximum_length.no_name.plural'] = 'No debe contener más de {0} caracteres.\nReducir {1} caracteres el tamaño de la entrada.';
+    JS_RESOURCES['validation.invalid_value'] = 'Se ha proporcionado un valor numérico no válido: {0}.';
+    JS_RESOURCES['field_name.substitute'] = '\'\'Campo de entrada {0}.';
+    JS_RESOURCES['validation.required'] = 'Es necesario suministrar un valor: {0}';
+    JS_RESOURCES['active.filter.free.form.text.blank'] = 'Especifique un valor para el campo de texto de búsqueda.';
+    JS_RESOURCES['validate.alignment.missing.content'] = 'Ha seleccionado las alineaciones pero no ha seleccionado ningún contenido alineable que copiar.';
+    JS_RESOURCES['validation.system_role.reserve'] = '"bb" no se permite al comienzo de una ID de rol.';
+    JS_RESOURCES['validation.date_past'] = 'La fecha de finalización no puede ser anterior a la fecha de inicio.';
+    JS_RESOURCES['validation.invalid_chars'] = 'Contiene caracteres no válidos: {0}.\nElimine estos caracteres: {1}';
+    JS_RESOURCES['confirm.delete_item_value'] = 'Este elemento {0} se eliminará. ¿Desea continuar?';
+    JS_RESOURCES['hide.helptext'] = 'Ocultar texto de ayuda';
+    JS_RESOURCES['validate.range.lessthen.str'] = 'Menos de {0}';
+    JS_RESOURCES['validation.date_past.confirm'] = 'La hora indicada ya ha pasado.\n¿Desea continuar con esta hora?';
+    JS_RESOURCES['validate.login.invalid.username.or.pass'] = 'Introduzca un nombre de usuario y una contraseña.';
+    JS_RESOURCES['validation.negative'] = 'Se debe introducir un valor no negativo válido: {0}.';
+    JS_RESOURCES['validation.url'] = 'Se debe introducir una dirección URL válida (por ejemplo, http://www.miuniversidad.es).';
+    JS_RESOURCES['validate.range.overlap'] = 'criterios ({0}) se superpone a los criterios ({1}).';
+    JS_RESOURCES['validate.range.between.str'] = 'Entre {0} y {1}';
+    JS_RESOURCES['validation.portal.tool.items.remove'] = '¿Eliminar: {0}?';
+    JS_RESOURCES['validation.association.refresh.confirm'] = 'Es posible que la información de los elementos asociados se haya actualizado.\nHaga clic en "Aceptar" para actualizar la lista o haga clic en "Cancelar" para continuar en la página actual.';
+    JS_RESOURCES['validate.enrolloptions.error.codeconflict'] = 'La opción Inscripción por código de acceso no es compatible con la selección de inscripción dirigida por {instructor}.';
+    JS_RESOURCES['validation.points.decimal.places'] = 'Los valores en puntos pueden tener 5 lugares decimales como máximo.';
+    JS_RESOURCES['validation.option.required'] = 'Debe seleccionar como mínimo una opción de la lista.';
+    JS_RESOURCES['list.checkToSelectAllItems'] = 'Para seleccionar todos los elementos, active esta casilla';
+    JS_RESOURCES['active.filter.changed.alert'] = 'los criterios ahora contienen';
+    JS_RESOURCES['vtbe.artifact.footer.validate.nameIfSaveArtifact'] = 'Especifique un nombre para guardar como objeto reutilizable.';
+    JS_RESOURCES['validate.invalidate.number'] = 'Introduzca un número válido en lugar de {0}.';
+    JS_RESOURCES['validation.valid_course_id'] = 'La ID del curso contiene caracteres ilegales o caracteres multibyte.';
+    JS_RESOURCES['assessment.incomplete.confirm'] = 'Las siguientes preguntas podrían estar incompletas:\n {0}\nHaga clic en Cancelar para volver a al examen Haga clic en Aceptar para enviar la evaluación.';
+    JS_RESOURCES['validate.enrolloptions.error.nooption'] = 'Advertencia: debe seleccionar la opción Dirigida por {instructor} o Autoinscripción.';
+    JS_RESOURCES['validation.date_equal'] = 'La fecha de inicio no puede ser la misma que la fecha de finalización.';
+    JS_RESOURCES['validation.cmp_field.rejected'] = 'No se puede utilizar el {0} sin un valor {1} correspondiente.';
+    JS_RESOURCES['validation.time.required'] = 'Es necesario proporcionar un valor de hora completo: {0}.';
+    JS_RESOURCES['validation.institutionemail'] = 'Si se utiliza un correo electrónico institucional, introduzca una dirección de correo electrónico completa y única (por ejemplo, info@blackboard.com).';
+    JS_RESOURCES['validation.integer_number'] = 'Se debe introducir un valor numérico entero válido: {0}.';
+    JS_RESOURCES['validation.maximum_length'] = 'No debe contener más de 255 caracteres';
+    JS_RESOURCES['validate.enrolloptions.error.emailrequestconflict'] = 'La opción de inscripción por correo electrónico seleccionada no es compatible con la selección de autoinscripción.';
+    JS_RESOURCES['invalid_char.space'] = 'espacio';
+    JS_RESOURCES['validate.range.morethen.str'] = 'Más de {0}';
+    JS_RESOURCES['notification.submit'] = 'Esta acción ya fue enviada.\nEspere hasta que haya finalizado la acción.';
+    JS_RESOURCES['validation.plain_text.confirm'] = 'Para mostrar las ecuaciones correctamente en este documento, se debe seleccionar formato Texto inteligente o HTML.\nHaga clic en "Aceptar" para guardar en formato Solo texto seleccionado, o haga clic en "Cancelar" para seleccionar un formato nuevo.';
+    JS_RESOURCES['invalid_char.comma'] = 'coma';
+    JS_RESOURCES['validation.allow_negtive.percent'] = 'Debe introducirse un valor válido entre -100 y 100.';
+    JS_RESOURCES['confirm.remove_item'] = 'Esta acción es definitiva y no se puede deshacer. ¿Desea continuar?';
+    JS_RESOURCES['list.uncheckToDeselectAllItems'] = 'Para anular la selección de todos los elementos, desactive esta casilla';
+    JS_RESOURCES['validation.maximum_length.singular'] = 'No debe contener más de {1} caracteres: {0}.\nReduzca el tamaño de la entrada en un carácter.';
+    JS_RESOURCES['validation.rubric.decimalplaces'] = 'Demasiados espacios decimales. El máximo es 5.';
+    JS_RESOURCES['validation.minimum_length'] = 'Se debe introducir un mínimo de {0} caracteres: {1}.';
+    JS_RESOURCES['vtbe.artifact.footer.validate.saveLocationIfSaveArtifact'] = 'Especifique una ubicación para el objeto reutilizable.';
+    JS_RESOURCES['assessment.incomplete.confirm.survey'] = 'Las siguientes preguntas podrían estar incompletas:\n {0}\nHaga clic en Cancelar para volver a la encuesta. Haga clic en Aceptar para enviar la evaluación.';
+    JS_RESOURCES['validation.image_type'] = 'Tipo de imagen desconocido: {0}. Es posible que la imagen no se visualice correctamente.';
+    JS_RESOURCES['validate.invalidate.number.space'] = 'Espacio';
+
+    JS_RESOURCES.getString = i18n_get_string;
+    JS_RESOURCES.getFormattedString = i18n_get_formatted_string;
+
+}
+
+_init_bundle_JS_RESOURCES();
+
+</script>
+<script language="javascript" type="text/javascript">
+
+var LOCALE_SETTINGS = new Object();
+
+function _init_bundle_LOCALE_SETTINGS() {
+
+    LOCALE_SETTINGS['LOCALE_SETTINGS.ADDRESS_FIELD_ORDER'] = 'STREET_1 STREET_2 CITY STATE ZIP_CODE COUNTRY';
+    LOCALE_SETTINGS['number_format.exponent'] = 'eE';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN.2'] = '{1}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.YEAR_CHARACTER.03255'] = '';
+    LOCALE_SETTINGS['BBI18N.SOLARIS_CHARSET'] = 'ISO8859-1';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN.1'] = '{0}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_MONTH.03255'] = 'ddd';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.internal_date_format'] = 'dd/MM/yy';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_MONTH.03259'] = 'MMMM \'de\' yyyy';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.TIME_ORDER.00519'] = 'HMP';
+    LOCALE_SETTINGS['float.format'] = '^([0-9]{1,3}(\\.[0-9]{3})*(\\,[0-9]+)?|\\,[0-9]+)?$';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.SORT_COLUMN'] = 'familyName';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.SHORT'] = '{1} {3}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_SHORT.02097'] = 'LUN MAR MIÉ JUE VIE SÁB DOM';
+    LOCALE_SETTINGS['float.allow.negative.format'] = '^((([-]?[0-9]{1,3}(\\.[0-9]{3})*)|[-]?[0-9]*)(\\,[0-9]+)?|\\,[0-9]+)?$';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TYPE'] = 'GREGORIAN';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.GIVEN_INITIAL_FAMILY_NAME'] = '{4} {3}';
+    LOCALE_SETTINGS['efloat.format'] = '^[+-]?[0-9]*(\\,[0-9]+)?([eE][+-]?[0-9]+)?$';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_WEEK.03260'] = 'd[ MMM][ yyyy]{\'&#8212;\'d MMM \'de\' yyyy}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_FULL.02100'] = 'enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NUMBERS_HIJRI_LOCALIZED.00521'] = 'NO';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.LONG'] = '{0} {1} {2} {3}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.WORK_FIELD_ORDER'] = 'JOB_TITLE DEPARTMENT COMPANY B_PHONE_1 B_PHONE_2 B_FAX';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_FULL_HIJRI.02100'] = 'Muḥarram,Ṣafar,Rabīʿ\'al-Awwal,Rabīʿ\'ath-Thānī,Jumādā\'al-Ūlā,Jumādā\'ath-Thāniya,Rajab,Shaʿbān,Ramaḍān,Shawwāl,Dhū\'al-Qaʿda,Dhū\'al-Ḥijja';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.GREETING'] = 'Bienvenido, {1}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_SHORT.00520'] = 'ene feb mar abr may jun jul ago sep oct nov dic';
+    LOCALE_SETTINGS['number_format.thousands_sep'] = '.';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_WEEK.03256'] = 'ddd, d/M';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.SHORT_SURNAME'] = '{3}, {1}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.AM_PM.00522'] = 'AM PM';
+    LOCALE_SETTINGS['number_format.negative_prefix'] = '-';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DATE_ORDER.00519'] = 'DMY';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.PHONE_FIELD_ORDER'] = 'H_PHONE_1 H_PHONE_2 H_FAX M_PHONE';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_MIN.02099'] = 'lun mar mié jue vie sáb dom';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.24HR_SUPPORT.03208'] = '1';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.FIRST_DAY_OF_WEEK.03207'] = '1';
+    LOCALE_SETTINGS['BBI18N.WINDOWS_CHARSET'] = 'ISO-8859-1';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_SHORT_HIJRI.00520'] = 'Muḥarram,Ṣafar,Rabīʿ\'I,Rabīʿ\'II,Jumādā\'I,Jumādā\'II,Rajab,Shaʿbān,Ramaḍān,Shawwāl,Dhū\'al-Qaʿda,Dhū\'al-Ḥijja';
+    LOCALE_SETTINGS['BBI18N.LINUX_CHARSET'] = 'iso88591';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_CHARACTER.03253'] = '';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_CHARACTER.03254'] = '';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN_ORDER'] = 'title,givenName,middleName,familyName,suffix,otherName';
+    LOCALE_SETTINGS['number_format.decimal_point'] = ',';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_DAY.03258'] = 'dddd, d \'de\' MMM \'de\' yyyy';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAYS.00521'] = '01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.OVERRIDE_LONG_TIME_WITH_FULL'] = 'false';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_FULL.02098'] = 'Lunes Martes Miércoles Jueves Viernes Sábado Domingo';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.date_display_pattern'] = 'DD/MM/AA';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.EXTENDED_SURNAME'] = '{3}';
+    LOCALE_SETTINGS['thousand.sep.format'] = '\\.';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NUMBERS_HIJRI.00521'] = '0 1 2 3 4 5 6 7 8 9';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.ADDRESS_ORDER.07832'] = 'street,city,region,postal_code,country';
+    LOCALE_SETTINGS['number_format.negative_suffix'] = '';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_DAY.03257'] = 'dddd, d/M';
+
+    LOCALE_SETTINGS.getString = i18n_get_string;
+    LOCALE_SETTINGS.getFormattedString = i18n_get_formatted_string;
+
+}
+
+_init_bundle_LOCALE_SETTINGS();
+
+</script>
+
+      <script language="javascript" type="text/javascript">
+
+var LOCALE_SETTINGS = new Object();
+
+function _init_bundle_LOCALE_SETTINGS() {
+
+    LOCALE_SETTINGS['LOCALE_SETTINGS.ADDRESS_FIELD_ORDER'] = 'STREET_1 STREET_2 CITY STATE ZIP_CODE COUNTRY';
+    LOCALE_SETTINGS['number_format.exponent'] = 'eE';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN.2'] = '{1}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.YEAR_CHARACTER.03255'] = '';
+    LOCALE_SETTINGS['BBI18N.SOLARIS_CHARSET'] = 'ISO8859-1';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN.1'] = '{0}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_MONTH.03255'] = 'ddd';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.internal_date_format'] = 'dd/MM/yy';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_MONTH.03259'] = 'MMMM \'de\' yyyy';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.TIME_ORDER.00519'] = 'HMP';
+    LOCALE_SETTINGS['float.format'] = '^([0-9]{1,3}(\\.[0-9]{3})*(\\,[0-9]+)?|\\,[0-9]+)?$';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.SORT_COLUMN'] = 'familyName';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.SHORT'] = '{1} {3}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_SHORT.02097'] = 'LUN MAR MIÉ JUE VIE SÁB DOM';
+    LOCALE_SETTINGS['float.allow.negative.format'] = '^((([-]?[0-9]{1,3}(\\.[0-9]{3})*)|[-]?[0-9]*)(\\,[0-9]+)?|\\,[0-9]+)?$';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TYPE'] = 'GREGORIAN';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.GIVEN_INITIAL_FAMILY_NAME'] = '{4} {3}';
+    LOCALE_SETTINGS['efloat.format'] = '^[+-]?[0-9]*(\\,[0-9]+)?([eE][+-]?[0-9]+)?$';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_WEEK.03260'] = 'd[ MMM][ yyyy]{\'&#8212;\'d MMM \'de\' yyyy}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_FULL.02100'] = 'enero febrero marzo abril mayo junio julio agosto septiembre octubre noviembre diciembre';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NUMBERS_HIJRI_LOCALIZED.00521'] = 'NO';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.LONG'] = '{0} {1} {2} {3}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.WORK_FIELD_ORDER'] = 'JOB_TITLE DEPARTMENT COMPANY B_PHONE_1 B_PHONE_2 B_FAX';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_FULL_HIJRI.02100'] = 'Muḥarram,Ṣafar,Rabīʿ\'al-Awwal,Rabīʿ\'ath-Thānī,Jumādā\'al-Ūlā,Jumādā\'ath-Thāniya,Rajab,Shaʿbān,Ramaḍān,Shawwāl,Dhū\'al-Qaʿda,Dhū\'al-Ḥijja';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.GREETING'] = 'Bienvenido, {1}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_SHORT.00520'] = 'ene feb mar abr may jun jul ago sep oct nov dic';
+    LOCALE_SETTINGS['number_format.thousands_sep'] = '.';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_WEEK.03256'] = 'ddd, d/M';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.SHORT_SURNAME'] = '{3}, {1}';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.AM_PM.00522'] = 'AM PM';
+    LOCALE_SETTINGS['number_format.negative_prefix'] = '-';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DATE_ORDER.00519'] = 'DMY';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.PHONE_FIELD_ORDER'] = 'H_PHONE_1 H_PHONE_2 H_FAX M_PHONE';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_MIN.02099'] = 'lun mar mié jue vie sáb dom';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.24HR_SUPPORT.03208'] = '1';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.FIRST_DAY_OF_WEEK.03207'] = '1';
+    LOCALE_SETTINGS['BBI18N.WINDOWS_CHARSET'] = 'ISO-8859-1';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_SHORT_HIJRI.00520'] = 'Muḥarram,Ṣafar,Rabīʿ\'I,Rabīʿ\'II,Jumādā\'I,Jumādā\'II,Rajab,Shaʿbān,Ramaḍān,Shawwāl,Dhū\'al-Qaʿda,Dhū\'al-Ḥijja';
+    LOCALE_SETTINGS['BBI18N.LINUX_CHARSET'] = 'iso88591';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_CHARACTER.03253'] = '';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.MONTH_CHARACTER.03254'] = '';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NAME.COLUMN_ORDER'] = 'title,givenName,middleName,familyName,suffix,otherName';
+    LOCALE_SETTINGS['number_format.decimal_point'] = ',';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_TITLE_FORMAT_DAY.03258'] = 'dddd, d \'de\' MMM \'de\' yyyy';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAYS.00521'] = '01 02 03 04 05 06 07 08 09 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.OVERRIDE_LONG_TIME_WITH_FULL'] = 'false';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.DAY_FULL.02098'] = 'Lunes Martes Miércoles Jueves Viernes Sábado Domingo';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.date_display_pattern'] = 'DD/MM/AA';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.EXTENDED_SURNAME'] = '{3}';
+    LOCALE_SETTINGS['thousand.sep.format'] = '\\.';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.NUMBERS_HIJRI.00521'] = '0 1 2 3 4 5 6 7 8 9';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.ADDRESS_ORDER.07832'] = 'street,city,region,postal_code,country';
+    LOCALE_SETTINGS['number_format.negative_suffix'] = '';
+    LOCALE_SETTINGS['LOCALE_SETTINGS.CALENDAR_COLUMN_FORMAT_DAY.03257'] = 'dddd, d/M';
+
+    LOCALE_SETTINGS.getString = i18n_get_string;
+    LOCALE_SETTINGS.getFormattedString = i18n_get_formatted_string;
+
+}
+
+_init_bundle_LOCALE_SETTINGS();
+
+</script>
+
+         <script type="text/javascript" src="testa_files/cookie.js"></script>
+    <script type="text/javascript" src="testa_files/cdn.js"></script>
+    <script type="text/javascript" src="testa_files/C83E3D4592EEA7E17D04117D892622FC.js"></script>
+    <script type="text/javascript" src="testa_files/UserDataDWRFacade.js"></script>
+    <script type="text/javascript" src="testa_files/MashupDWRFacade.js"></script>
+    <script type="text/javascript" src="testa_files/mathImg.js"></script>
+    <script type="text/javascript" src="testa_files/titlebartagutils.js"></script>
+    <script type="text/javascript" src="testa_files/inventoryList.js"></script>
+    <script type="text/javascript" src="testa_files/23E6C855FEC42DBE796EF675F32C6653.js"></script>
+    <script type="text/javascript" src="testa_files/CourseMenuDWRFacade.js"></script>
+    <script type="text/javascript" src="testa_files/UserPageInstructionsSettingDWRFacade.js"></script>
+    <script type="text/javascript" src="testa_files/engine.js"></script>
+    <script type="text/javascript" src="testa_files/breadcrumbs.js"></script>
+    <script type="text/javascript" src="testa_files/tree.js"></script>
+    <script type="text/javascript" src="testa_files/coursemenu.js"></script>
+    <script type="text/javascript" src="testa_files/util.js"></script>
+    <script type="text/javascript" src="testa_files/0786390125FDE0B6827A604BC68BB7C5.js"></script>
+    <script type="text/javascript" src="testa_files/UserDWRFacade.js"></script>
+    <script type="text/javascript" src="testa_files/capabilities.js"></script>
+    <script type="text/javascript" src="testa_files/WIRISplugins.js"></script>
+    <link rel="preload" type="font/woff2" href="https://uah.blackboard.com/themes/as_2015/fonts/open-sans/open-sans-300.woff" as="font" crossorigin="anonymous"><link rel="preload" type="font/woff2" href="https://uah.blackboard.com/themes/as_2015/fonts/open-sans/open-sans-300italic.woff" as="font" crossorigin="anonymous"><link rel="stylesheet" type="text/css" href="testa_files/learn.801fee0486fbb16e512eaa235b7b517f.css"></head>
+  <body id="learn-oe-body" class="ally-tooltips-enabled"><a id="skip-to-content" href="#content" tabindex="1">Ir al contenido</a>
+  
+<div class="quickLinksOnly"><div id="quick_links_wrap" role="region" aria-label="Enlaces rápidos"><h1 class="hideoff hideFromQuickLinks">Abrir enlaces rápidos</h1><a id="quick_links_lightbox_link" href="#" onclick="quickLinks.lightboxHelper.toggleLightbox(); return false;" role="button" aria-haspopup="true" tabindex="1" title="Abrir enlaces rápidos">Enlaces rápidos</a></div><div id="quickLinksLightboxDiv" class="hideoff" aria-hidden="true" style="display:none"><div class="ax-content"><div class="content-lite"><div id="quick_links_landmarks_section"><h2 class="hideFromQuickLinks">Marcadores de página</h2><ul class="shortcut-list" id="quick_links_landmark_list"></ul></div><div id="quick_links_headings_section"><h2 class="hideFromQuickLinks">Esquema de contenido</h2><ul class="shortcut-list" id="quick_links_heading_list"></ul></div></div><div id="quick_links_hotkeys_section" class="legend"><h2 class="hideFromQuickLinks">Accesos directos de teclado</h2><ul class="keycombos" id="quick_links_hotkey_list"></ul></div></div></div></div>
+<div id="globalNavPageContentArea">
+
+<div role="region" aria-label="Ubicación actual">
+ <h2 class="hideoff" id="anonymous_element_1">
+  Ubicación actual
+ </h2>
+</div>
+
+<div id="breadcrumbs" role="navigation" aria-label="Ruta de navegación" class="breadcrumbs clearfix">
+ <div class="breadcrumb-controls clearfix" id="breadcrumb_controls_id">
+
+
+
+
+
+<div id="helpTextToggle" class="helpLink hidden">
+  
+</div>
+ <input type="hidden" name="showHelperSetting" id="showHelperSetting" value="">
+ </div>
+
+ <div class="path  noToggle">
+ <ol class="clearfix">
+    	<li class="root"> <a href="https://uah.blackboard.com/webapps/blackboard/execute/courseMain?course_id=_29723_1" title="2022-23: INGENIERÍA DEL SOFTWARE AVANZADA (3A_G581)">        <span id="crumb_1">
+                      2022-23: INGENIERÍA DEL SOFTWARE AVANZADA (3A_G581)
+                  </span>
+      </a>          </li>
+   	<li> <a href="https://uah.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_29723_1&amp;content_id=_2230179_1&amp;mode=reset" title="Exámenes y Autoevaluaciones">        <span id="crumb_2">
+                      Exámenes y Autoevaluaciones
+                  </span>
+      </a>          </li>
+   	<li class="placeholder">         <span id="crumb_3">
+                      Revisar entrega de examen: Autoevaluación 1
+                  </span>
+                </li>
+  </ol>
+ </div>
+
+</div>
+
+<div class="locationPane">
+ <nav role="navigation" aria-label="Course Menu" id="navigationPane" class="navigationPane ">
+ 
+ <div id="menuWrap" class="menuWrap">
+  <div id="puller">
+  <a id="menuPuller" class="clickpuller" title="Ocultar menú Curso" href="#">
+   <img id="expander" alt="Ocultar menú Curso" src="testa_files/spacer.gif">
+  </a>
+ </div>
+<div class="menuWrap-inner">
+  <div id="courseMenuPalette" class="navPalette listCm navPaletteExpCol"><div class="actionBarMicro clearfix"><h2 class="hideoff" id="anonymous_element_2">Opciones de administración del menú</h2><ul id="courseMenuPalette_actionbar" class="nav clearfix u_floatThis-left"></ul><ul class="nav clearfix u_floatThis-right"><li id="refreshMenuLink" class="secondaryButton "><a href="#" title="Actualizar"><span><img src="testa_files/small_refresh.gif" alt="Actualizar"></span></a></li><li id="courseMapButton" class="secondaryButton "><a href="#" title="Mostrar menú del curso en una ventana"><span><img src="testa_files/small_new_window.gif" alt="Mostrar menú del curso en una ventana"></span></a></li></ul></div><div class="navPaletteContent"><h2 class="hideoff" tabindex="-1" id="anonymous_element_3">Menú del curso:</h2><div id="courseMenuPalette_paletteTitleHeading"><div class="navPaletteTitle"><h3 id="anonymous_element_4"><a href="#" role="button" aria-expanded="true" class="comboLink" aria-controls="courseMenuPalette_contents" title="Contraer 2022-23: INGENIERÍA DEL SOFTWARE AVANZADA (3A_G581)" id="courseMenu_link">2022-23: INGENIERÍA DEL SOFTWARE AVANZADA (3A_G581)</a></h3><h3 id="anonymous_element_5"><a href="https://uah.blackboard.com/webapps/blackboard/execute/courseMain?course_id=_29723_1" target="" class="submenuLink" id="courseMenu_combo" title="Ir a la página de acceso al curso"><img src="testa_files/generic_dbl_arrow_right.gif" alt="Página de acceso al curso"></a></h3></div></div><ul id="courseMenuPalette_contents" class="courseMenu"><li id="paletteItem:_385402_1" class="clearfix "><a href="https://uah.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_29723_1&amp;tool_id=_134_1&amp;tool_type=TOOL&amp;mode=view&amp;mode=reset" target="_self"><span title="Anuncios">Anuncios</span></a></li><li id="paletteItem:_385397_1" class="clearfix "><a href="https://uah.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_29723_1&amp;content_id=_2230175_1&amp;mode=reset" target="_self"><span title="Contenido del curso">Contenido del curso</span></a></li><li id="paletteItem:_385399_1" class="clearfix "><a href="https://uah.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_29723_1&amp;content_id=_2230179_1&amp;mode=reset" target="_self"><span title="Exámenes y Autoevaluaciones">Exámenes y Autoevaluaciones</span></a></li><li id="paletteItem:_385400_1" class="clearfix "><a href="https://uah.blackboard.com/webapps/blackboard/content/listContent.jsp?course_id=_29723_1&amp;content_id=_2230176_1&amp;mode=reset" target="_self"><span title="Entrega de prácticas del laboratorio">Entrega de prácticas del laboratorio</span></a></li><li id="paletteItem:_385403_1" class="clearfix "><a href="https://uah.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_29723_1&amp;tool_id=_142_1&amp;tool_type=TOOL&amp;mode=view&amp;mode=reset" target="_self"><span title="Foro">Foro</span></a></li><li id="paletteItem:_385404_1" class="clearfix "><a href="https://uah.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_29723_1&amp;tool_id=_331_1&amp;tool_type=TOOL&amp;mode=view&amp;mode=reset" target="_self"><span title="Correo">Correo</span></a></li><li id="paletteItem:_385405_1" class="clearfix "><a href="https://uah.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_29723_1&amp;tool_id=_156_1&amp;tool_type=TOOL&amp;mode=view&amp;mode=reset" target="_self"><span title="Mis calificaciones">Mis calificaciones</span></a></li><li id="paletteItem:_385406_1" class="clearfix "><a href="https://uah.blackboard.com/webapps/blackboard/content/launchLink.jsp?course_id=_29723_1&amp;tool_id=_2278_1&amp;tool_type=TOOL&amp;mode=view&amp;mode=reset" target="_self"><span title="Blackboard Collaborate">Blackboard Collaborate</span></a></li></ul></div></div><div id="myGroups" class="navPalette tools navPaletteExpCol"><div class="navPaletteContent"><div id="myGroups_paletteTitleHeading"><div class="navPaletteTitle"><h3 id="anonymous_element_6"><a href="#" role="button" aria-expanded="true" id="myGroups_link" aria-controls="myGroups_contents" title="Contraer Mis grupos"> Mis grupos </a></h3></div></div><ul id="myGroups_contents" class=""><li id="mygroups._103573_1"><h4 role="presentation" id="anonymous_element_7"><a class="comboLink" role="button" href="#" aria-controls="mygroups._103573_1_groupContents" id="mygroups._103573_1_groupExpanderLink" title="Expandir Grupo tarde 15-17  8" aria-expanded="false">Grupo tarde 15-17 8</a></h4><a class="submenuLink" href="https://uah.blackboard.com/webapps/blackboard/execute/modulepage/viewGroup?course_id=_29723_1&amp;group_id=_103573_1" title="Ir a la página de inicio del grupo: Grupo tarde 15-17 8"><img alt="Página principal del grupo: Grupo tarde 15-17 8" src="testa_files/generic_dbl_arrow_right.gif"></a><ul class="submenu" id="mygroups._103573_1_groupContents" style="display:none;"><li>&nbsp;</li></ul></li></ul></div></div>
+  </div>
+ </div>
+ </nav>
+ <div role="main" id="contentPanel" class="contentPane ok ">
+<div class="shadow">
+       <div id="editmodeWrapper"> 
+ 
+  <div id="content" class="contentBox ">
+   
+<div id="pageTitleDiv" class="pageTitle clearfix ">
+
+  
+<div id="pageTitleBar" class="pageTitleIcon" tabindex="0">
+    <img src="testa_files/editpage_on.svg" alt="" id="titleicon"><h1 id="pageTitleHeader" tabindex="-1"><span id="pageTitleText">
+  <span style="color:;">Revisar entrega de examen: Autoevaluación 1</span>  </span></h1>
+        <span id="_titlebarExtraContent" class="titleButtons"></span>
+</div>
+
+
+</div>
+
+      <div class="container clearfix" id="containerdiv">
+    <h2 class="hideoff" id="anonymous_element_8">Contenido</h2>
+    <script type="text/javascript" src="testa_files/achievement.js"></script><link rel="stylesheet" href="testa_files/achievements.css" type="text/css" media="screen"><script type="text/javascript">
+var jsonArray = [];
+handleAchievements(jsonArray);
+</script><!-- This block is not embedded within jspBlock as ref variables declared/defined here are used further in the code.-->
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+
+
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+
+<div id="bbNG.receiptTag.content" tabindex="0"><!-- \review\assessment.jsp -->
+
+<div class="infoListWrapper">
+  <table class="key-valueTable" summary="">
+        
+<tbody><tr valign="top">
+  <th scope="row" class="u_normalAlign"><span class="label">Usuario</span></th>
+  <td>
+
+Sergio Andrés Yaccelga Castillo
+  </td>
+</tr>
+
+<tr valign="top">
+  <th scope="row" class="u_normalAlign"><span class="label">Curso</span></th>
+  <td>
+
+2022-23: INGENIERÍA DEL SOFTWARE AVANZADA (3A_G581)
+  </td>
+</tr>
+
+<tr valign="top">
+  <th scope="row" class="u_normalAlign"><span class="label">Examen</span></th>
+  <td>
+
+Autoevaluación 1
+  </td>
+</tr>
+
+<tr valign="top">
+  <th scope="row" class="u_normalAlign"><span class="label">Iniciado</span></th>
+  <td>
+
+4/11/22 17:13
+  </td>
+</tr>
+
+<tr valign="top">
+  <th scope="row" class="u_normalAlign"><span class="label">Enviado</span></th>
+  <td>
+
+4/11/22 17:37
+  </td>
+</tr>
+
+<tr valign="top">
+  <th scope="row" class="u_normalAlign"><span class="label">Estado</span></th>
+  <td>
+
+Completado
+  </td>
+</tr>
+
+<tr valign="top">
+  <th scope="row" class="u_normalAlign"><span class="label">Puntuación del intento</span></th>
+  <td>
+
+7 de 23 puntos
+            &nbsp;
+          
+  </td>
+</tr>
+
+<tr valign="top">
+  <th scope="row" class="u_normalAlign"><span class="label">Tiempo transcurrido</span></th>
+  <td>
+
+24 minutos 
+  </td>
+</tr>
+
+<tr valign="top">
+  <th scope="row" class="u_normalAlign"><span class="label">Resultados mostrados</span></th>
+  <td>
+
+Todas las respuestas, Respuestas enviadas, Respuestas correctas, Preguntas respondidas incorrectamente
+  </td>
+</tr>
+</tbody></table>
+  </div>
+
+  
+
+
+<!-- remember whether this list is paged -->
+<input type="hidden" name="isPaged" value="false">
+
+<!-- begin edit paging (top) --> 
+  <!-- end top paging edit -->
+
+
+
+<!-- Begin top list actionbar /paging area -->
+ 
+<ul id="content_listContainer" class="contentListPlain">
+
+
+
+<li id="contentListItem:_19427290_1" class="clearfix liItem read">
+
+
+<div class="item clearfix contentListRightOffset" id="_19427290_1">
+
+ <h3 id="anonymous_element_9">
+  <span class="reorder editmode hideme"><span><img src="testa_files/generic_updown.gif" alt=""></span></span>
+
+
+
+     Pregunta 1
+ </h3>
+   
+ </div>
+
+<div class="contentListRight">
+  <p class="taskbuttondiv">0 de 1 puntos</p>
+</div>
+
+
+<div class="details">
+    
+<table width="100%" cellspacing="0" cellpadding="2" border="0">
+<tbody><tr>
+  <td class="bLight" valign="middle" nowrap="nowrap">
+ <a class="hidden" href="#" onclick="return false;" id="question_1">&nbsp;</a>
+</td>
+<td class="bLight" colspan="5" valign="middle" nowrap="nowrap" align="RIGHT"> </td>
+</tr>
+<tr>
+<td class="reviewTestSubCellForIconBig" rowspan="2" valign="top" align="center"><img id="gs_q1" src="testa_files/grade-incorrect_u.gif" alt="Incorrecta" title="Incorrecta"></td>
+<td colspan="2" width="100%" valign="top"><div class="vtbegenerated inlineVtbegenerated">
+ “Subcontratar un programador un mes para afrontar un retraso en el desarrollo” Esta decisión es:
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+<table cellspacing="0" cellpadding="5">
+  <tbody><tr>
+        <td valign="top">
+          <span class="label">Respuesta seleccionada:</span>
+        </td>
+        <td valign="top">
+          <div class="reviewQuestionsAnswerDiv">
+            <span class="incorrectAnswerFlag"><img src="testa_files/x.gif" alt="Incorrecta"></span><span class="answerNumLabelSpan"></span>
+            <span class="answerTextSpan">
+              
+<div class="vtbegenerated inlineVtbegenerated">
+ Estratégica
+</div>
+</span>
+          </div>
+        </td>
+      </tr>
+  <tr>
+          <td valign="top">
+      <span class="label">Respuestas:</span>
+      </td>
+          
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427290_1_0">Estratégica</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427290_1_1">Táctica</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427290_1_2">Operativa </label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        </tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table>
+  </div>
+
+ <div id="_19427290_1previewModule" class="moduleSample">
+ </div>
+</li>
+
+
+
+
+<li id="contentListItem:_19427291_1" class="clearfix liItem read">
+
+
+<div class="item clearfix contentListRightOffset" id="_19427291_1">
+
+ <h3 id="anonymous_element_10">
+  <span class="reorder editmode hideme"><span><img src="testa_files/generic_updown.gif" alt=""></span></span>
+
+
+
+     Pregunta 2
+ </h3>
+   
+ </div>
+
+<div class="contentListRight">
+  <p class="taskbuttondiv">0 de 1 puntos</p>
+</div>
+
+
+<div class="details">
+    
+<table width="100%" cellspacing="0" cellpadding="2" border="0">
+<tbody><tr>
+  <td class="bLight" valign="middle" nowrap="nowrap">
+ <a class="hidden" href="#" onclick="return false;" id="question_2">&nbsp;</a>
+</td>
+<td class="bLight" colspan="5" valign="middle" nowrap="nowrap" align="RIGHT"> </td>
+</tr>
+<tr>
+<td class="reviewTestSubCellForIconBig" rowspan="2" valign="top" align="center"><img id="gs_q2" src="testa_files/grade-incorrect_u.gif" alt="Incorrecta" title="Incorrecta"></td>
+<td colspan="2" width="100%" valign="top"><div class="vtbegenerated inlineVtbegenerated">
+ Para adquirir un sistema estándar es necesario:
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+<table cellspacing="0" cellpadding="5">
+  <tbody><tr>
+        <td valign="top">
+          <span class="label">Respuesta seleccionada:</span>
+        </td>
+        <td valign="top">
+          <div class="reviewQuestionsAnswerDiv">
+            <span class="incorrectAnswerFlag"><img src="testa_files/x.gif" alt="Incorrecta"></span><span class="answerNumLabelSpan"></span>
+            <span class="answerTextSpan">
+              
+<div class="vtbegenerated inlineVtbegenerated">
+ Listar en detalle requisitos presentes y futuros
+</div>
+</span>
+          </div>
+        </td>
+      </tr>
+  <tr>
+          <td valign="top">
+      <span class="label">Respuestas:</span>
+      </td>
+          
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427291_1_0">Listar en detalle requisitos presentes y futuros</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427291_1_1">Comprobar si hay herramientas CASE para modificarlo y mantenerlo</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427291_1_2">Hablar con usuarios y permitir uso temporal de prueba</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427291_1_3">Todas las anteriores </label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427291_1_4">Ninguna de las anteriores</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        </tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table>
+  </div>
+
+ <div id="_19427291_1previewModule" class="moduleSample">
+ </div>
+</li>
+
+
+
+
+<li id="contentListItem:_19427292_1" class="clearfix liItem read">
+
+
+<div class="item clearfix contentListRightOffset" id="_19427292_1">
+
+ <h3 id="anonymous_element_11">
+  <span class="reorder editmode hideme"><span><img src="testa_files/generic_updown.gif" alt=""></span></span>
+
+
+
+     Pregunta 3
+ </h3>
+   
+ </div>
+
+<div class="contentListRight">
+  <p class="taskbuttondiv">1 de 1 puntos</p>
+</div>
+
+
+<div class="details">
+    
+<table width="100%" cellspacing="0" cellpadding="2" border="0">
+<tbody><tr>
+  <td class="bLight" valign="middle" nowrap="nowrap">
+ <a class="hidden" href="#" onclick="return false;" id="question_3">&nbsp;</a>
+</td>
+<td class="bLight" colspan="5" valign="middle" nowrap="nowrap" align="RIGHT"> </td>
+</tr>
+<tr>
+<td class="reviewTestSubCellForIconBig" rowspan="2" valign="top" align="center"><img id="gs_q3" src="testa_files/grade-correct_u.gif" alt="Correcta" title="Correcta"></td>
+<td colspan="2" width="100%" valign="top"><div class="vtbegenerated inlineVtbegenerated">
+ “Cada fase del proceso RUP se divide en __________________, cada una de
+ las cuales produce _______________ del producto” Marca la palabra que 
+falta en el segundo hueco.
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+<table cellspacing="0" cellpadding="5">
+  <tbody><tr>
+        <td valign="top">
+          <span class="label">Respuesta seleccionada:</span>
+        </td>
+        <td valign="top">
+          <div class="reviewQuestionsAnswerDiv">
+            <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+            <span class="answerTextSpan">
+              
+<div class="vtbegenerated inlineVtbegenerated">
+ Una versión 
+</div>
+</span>
+          </div>
+        </td>
+      </tr>
+  <tr>
+          <td valign="top">
+      <span class="label">Respuestas:</span>
+      </td>
+          
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427292_1_0">Un artefacto</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427292_1_1">Una iteración</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427292_1_2">Una versión </label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427292_1_3">Un modelo</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        </tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table>
+  </div>
+
+ <div id="_19427292_1previewModule" class="moduleSample">
+ </div>
+</li>
+
+
+
+
+<li id="contentListItem:_19427293_1" class="clearfix liItem read">
+
+
+<div class="item clearfix contentListRightOffset" id="_19427293_1">
+
+ <h3 id="anonymous_element_12">
+  <span class="reorder editmode hideme"><span><img src="testa_files/generic_updown.gif" alt=""></span></span>
+
+
+
+     Pregunta 4
+ </h3>
+   
+ </div>
+
+<div class="contentListRight">
+  <p class="taskbuttondiv">0 de 1 puntos</p>
+</div>
+
+
+<div class="details">
+    
+<table width="100%" cellspacing="0" cellpadding="2" border="0">
+<tbody><tr>
+  <td class="bLight" valign="middle" nowrap="nowrap">
+ <a class="hidden" href="#" onclick="return false;" id="question_4">&nbsp;</a>
+</td>
+<td class="bLight" colspan="5" valign="middle" nowrap="nowrap" align="RIGHT"> </td>
+</tr>
+<tr>
+<td class="reviewTestSubCellForIconBig" rowspan="2" valign="top" align="center"><img id="gs_q4" src="testa_files/grade-incorrect_u.gif" alt="Incorrecta" title="Incorrecta"></td>
+<td colspan="2" width="100%" valign="top"><div class="vtbegenerated inlineVtbegenerated">
+ “La interfaz de usuario funcionará sobre un navegador Web” Este requisito es:
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+<table cellspacing="0" cellpadding="5">
+  <tbody><tr>
+        <td valign="top">
+          <span class="label">Respuesta seleccionada:</span>
+        </td>
+        <td valign="top">
+          <div class="reviewQuestionsAnswerDiv">
+            <span class="incorrectAnswerFlag"><img src="testa_files/x.gif" alt="Incorrecta"></span><span class="answerNumLabelSpan"></span>
+            <span class="answerTextSpan">
+              
+<div class="vtbegenerated inlineVtbegenerated">
+ No funcional y correcto
+</div>
+</span>
+          </div>
+        </td>
+      </tr>
+  <tr>
+          <td valign="top">
+      <span class="label">Respuestas:</span>
+      </td>
+          
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427293_1_0">Funcional y correcto</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427293_1_1">No funcional y correcto</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427293_1_2">Funcional e incorrecto</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427293_1_3">No funcional e incorrecto </label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        </tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table>
+  </div>
+
+ <div id="_19427293_1previewModule" class="moduleSample">
+ </div>
+</li>
+
+
+
+
+<li id="contentListItem:_19427294_1" class="clearfix liItem read">
+
+
+<div class="item clearfix contentListRightOffset" id="_19427294_1">
+
+ <h3 id="anonymous_element_13">
+  <span class="reorder editmode hideme"><span><img src="testa_files/generic_updown.gif" alt=""></span></span>
+
+
+
+     Pregunta 5
+ </h3>
+   
+ </div>
+
+<div class="contentListRight">
+  <p class="taskbuttondiv">0 de 1 puntos</p>
+</div>
+
+
+<div class="details">
+    
+<table width="100%" cellspacing="0" cellpadding="2" border="0">
+<tbody><tr>
+  <td class="bLight" valign="middle" nowrap="nowrap">
+ <a class="hidden" href="#" onclick="return false;" id="question_5">&nbsp;</a>
+</td>
+<td class="bLight" colspan="5" valign="middle" nowrap="nowrap" align="RIGHT"> </td>
+</tr>
+<tr>
+<td class="reviewTestSubCellForIconBig" rowspan="2" valign="top" align="center"><img id="gs_q5" src="testa_files/grade-incorrect_u.gif" alt="Incorrecta" title="Incorrecta"></td>
+<td colspan="2" width="100%" valign="top"><div class="vtbegenerated inlineVtbegenerated">
+ ¿Qué técnica de recogida de información recomendarías utilizar para realizar el Plan Estratégico de Sistemas de Información?
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+<table cellspacing="0" cellpadding="5">
+  <tbody><tr>
+        <td valign="top">
+          <span class="label">Respuesta seleccionada:</span>
+        </td>
+        <td valign="top">
+          <div class="reviewQuestionsAnswerDiv">
+            <span class="incorrectAnswerFlag"><img src="testa_files/x.gif" alt="Incorrecta"></span><span class="answerNumLabelSpan"></span>
+            <span class="answerTextSpan">
+              
+<div class="vtbegenerated inlineVtbegenerated">
+ Prototipado
+</div>
+</span>
+          </div>
+        </td>
+      </tr>
+  <tr>
+          <td valign="top">
+      <span class="label">Respuestas:</span>
+      </td>
+          
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427294_1_0">JRP </label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427294_1_1">Prototipado</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427294_1_2">JAD</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427294_1_3">Todas las anteriores</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427294_1_4">Ninguna de las anteriores</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        </tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table>
+  </div>
+
+ <div id="_19427294_1previewModule" class="moduleSample">
+ </div>
+</li>
+
+
+
+
+<li id="contentListItem:_19427295_1" class="clearfix liItem read">
+
+
+<div class="item clearfix contentListRightOffset" id="_19427295_1">
+
+ <h3 id="anonymous_element_14">
+  <span class="reorder editmode hideme"><span><img src="testa_files/generic_updown.gif" alt=""></span></span>
+
+
+
+     Pregunta 6
+ </h3>
+   
+ </div>
+
+<div class="contentListRight">
+  <p class="taskbuttondiv">0 de 1 puntos</p>
+</div>
+
+
+<div class="details">
+    
+<table width="100%" cellspacing="0" cellpadding="2" border="0">
+<tbody><tr>
+  <td class="bLight" valign="middle" nowrap="nowrap">
+ <a class="hidden" href="#" onclick="return false;" id="question_6">&nbsp;</a>
+</td>
+<td class="bLight" colspan="5" valign="middle" nowrap="nowrap" align="RIGHT"> </td>
+</tr>
+<tr>
+<td class="reviewTestSubCellForIconBig" rowspan="2" valign="top" align="center"><img id="gs_q6" src="testa_files/grade-incorrect_u.gif" alt="Incorrecta" title="Incorrecta"></td>
+<td colspan="2" width="100%" valign="top"><div class="vtbegenerated inlineVtbegenerated">
+ El proceso mediante el cual los usuarios del software descubren, 
+revelan, articulan y comprenden los requisitos que desean, se denomina:
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+<table cellspacing="0" cellpadding="5">
+  <tbody><tr>
+        <td valign="top">
+          <span class="label">Respuesta seleccionada:</span>
+        </td>
+        <td valign="top">
+          <div class="reviewQuestionsAnswerDiv">
+            <span class="incorrectAnswerFlag"><img src="testa_files/x.gif" alt="Incorrecta"></span><span class="answerNumLabelSpan"></span>
+            <span class="answerTextSpan">
+              
+<div class="vtbegenerated inlineVtbegenerated">
+ Análisis de requisitos
+</div>
+</span>
+          </div>
+        </td>
+      </tr>
+  <tr>
+          <td valign="top">
+      <span class="label">Respuestas:</span>
+      </td>
+          
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427295_1_0">Extracción o determinación de requisitos </label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427295_1_1">Análisis de requisitos</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427295_1_2">Especificación de requisitos</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427295_1_3">Validación de los requisitos</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427295_1_4">Ninguna de las anteriores</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        </tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table>
+  </div>
+
+ <div id="_19427295_1previewModule" class="moduleSample">
+ </div>
+</li>
+
+
+
+
+<li id="contentListItem:_19427296_1" class="clearfix liItem read">
+
+
+<div class="item clearfix contentListRightOffset" id="_19427296_1">
+
+ <h3 id="anonymous_element_15">
+  <span class="reorder editmode hideme"><span><img src="testa_files/generic_updown.gif" alt=""></span></span>
+
+
+
+     Pregunta 7
+ </h3>
+   
+ </div>
+
+<div class="contentListRight">
+  <p class="taskbuttondiv">0 de 1 puntos</p>
+</div>
+
+
+<div class="details">
+    
+<table width="100%" cellspacing="0" cellpadding="2" border="0">
+<tbody><tr>
+  <td class="bLight" valign="middle" nowrap="nowrap">
+ <a class="hidden" href="#" onclick="return false;" id="question_7">&nbsp;</a>
+</td>
+<td class="bLight" colspan="5" valign="middle" nowrap="nowrap" align="RIGHT"> </td>
+</tr>
+<tr>
+<td class="reviewTestSubCellForIconBig" rowspan="2" valign="top" align="center"><img id="gs_q7" src="testa_files/grade-incorrect_u.gif" alt="Incorrecta" title="Incorrecta"></td>
+<td colspan="2" width="100%" valign="top"><div class="vtbegenerated inlineVtbegenerated">
+ <p><span style="font-size: 12.0pt; line-height: 107%; font-family: 'Times New Roman',serif;">Eres
+ el analista responsable de un nuevo desarrollo de software. Revisando 
+el análisis realizado por tu equipo, te encuentras con los siguientes 
+casos de uso y su descripción: </span></p> 
+ <p><span style="font-size: 12.0pt; line-height: 107%; font-family: 'Times New Roman',serif;">1.
+ Lista de estudiantes: Dadas una fecha de inicio y fin de un periodo, el
+ sistema muestra los estudiantes matriculados en ese periodo; </span></p> 
+ <p><span style="font-size: 12.0pt; line-height: 107%; font-family: 'Times New Roman',serif;">2.
+ Alta de un estudiante: El usuario introduce los datos de un estudiante,
+ el sistema los valida y crea un nuevo estudiante en el sistema; </span></p> 
+ <p><span style="font-size: 12.0pt; line-height: 107%; font-family: 'Times New Roman',serif;">3.
+ Consulta y borrado de estudiantes: El sistema permite acceder a un 
+estudiante y consultar sus datos. Algunos empleados además puede 
+eliminar un cliente del sistema. </span></p> 
+ <p><span style="font-size: 12.0pt; line-height: 107%; font-family: 'Times New Roman',serif;">Marca la respuesta correcta</span></p>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+<table cellspacing="0" cellpadding="5">
+  <tbody><tr>
+        <td valign="top">
+          <span class="label">Respuesta seleccionada:</span>
+        </td>
+        <td valign="top">
+          <div class="reviewQuestionsAnswerDiv">
+            <span class="incorrectAnswerFlag"><img src="testa_files/x.gif" alt="Incorrecta"></span><span class="answerNumLabelSpan"></span>
+            <span class="answerTextSpan">
+              
+<div class="vtbegenerated inlineVtbegenerated">
+ <p>1, 2 y 3 son correctos</p>
+</div>
+</span>
+          </div>
+        </td>
+      </tr>
+  <tr>
+          <td valign="top">
+      <span class="label">Respuestas:</span>
+      </td>
+          
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427296_1_0"><p>1 es incorrecto</p></label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427296_1_1"><p>2 es incorrecto</p></label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427296_1_2"><p>3 es incorrecto</p></label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427296_1_3"><p>1, 2 y 3 son incorrectos</p></label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427296_1_4"><p>1, 2 y 3 son correctos</p></label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        </tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table>
+  </div>
+
+ <div id="_19427296_1previewModule" class="moduleSample">
+ </div>
+</li>
+
+
+
+
+<li id="contentListItem:_19427297_1" class="clearfix liItem read">
+
+
+<div class="item clearfix contentListRightOffset" id="_19427297_1">
+
+ <h3 id="anonymous_element_16">
+  <span class="reorder editmode hideme"><span><img src="testa_files/generic_updown.gif" alt=""></span></span>
+
+
+
+     Pregunta 8
+ </h3>
+   
+ </div>
+
+<div class="contentListRight">
+  <p class="taskbuttondiv">1 de 1 puntos</p>
+</div>
+
+
+<div class="details">
+    
+<table width="100%" cellspacing="0" cellpadding="2" border="0">
+<tbody><tr>
+  <td class="bLight" valign="middle" nowrap="nowrap">
+ <a class="hidden" href="#" onclick="return false;" id="question_8">&nbsp;</a>
+</td>
+<td class="bLight" colspan="5" valign="middle" nowrap="nowrap" align="RIGHT"> </td>
+</tr>
+<tr>
+<td class="reviewTestSubCellForIconBig" rowspan="2" valign="top" align="center"><img id="gs_q8" src="testa_files/grade-correct_u.gif" alt="Correcta" title="Correcta"></td>
+<td colspan="2" width="100%" valign="top"><div class="vtbegenerated inlineVtbegenerated">
+ ¿Cuál de las siguientes relaciones puede unir dos casos de uso en un diagrama de casos de uso?
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+<table cellspacing="0" cellpadding="5">
+  <tbody><tr>
+        <td valign="top">
+          <span class="label">Respuesta seleccionada:</span>
+        </td>
+        <td valign="top">
+          <div class="reviewQuestionsAnswerDiv">
+            <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+            <span class="answerTextSpan">
+              
+<div class="vtbegenerated inlineVtbegenerated">
+ Extend 
+</div>
+</span>
+          </div>
+        </td>
+      </tr>
+  <tr>
+          <td valign="top">
+      <span class="label">Respuestas:</span>
+      </td>
+          
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427297_1_0">Generalización</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427297_1_1">Extend </label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427297_1_2">Dependencia</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427297_1_3">Todas las anteriores</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427297_1_4">Ninguna de las anteriores</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        </tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table>
+  </div>
+
+ <div id="_19427297_1previewModule" class="moduleSample">
+ </div>
+</li>
+
+
+
+
+<li id="contentListItem:_19427298_1" class="clearfix liItem read">
+
+
+<div class="item clearfix contentListRightOffset" id="_19427298_1">
+
+ <h3 id="anonymous_element_17">
+  <span class="reorder editmode hideme"><span><img src="testa_files/generic_updown.gif" alt=""></span></span>
+
+
+
+     Pregunta 9
+ </h3>
+   
+ </div>
+
+<div class="contentListRight">
+  <p class="taskbuttondiv">1 de 1 puntos</p>
+</div>
+
+
+<div class="details">
+    
+<table width="100%" cellspacing="0" cellpadding="2" border="0">
+<tbody><tr>
+  <td class="bLight" valign="middle" nowrap="nowrap">
+ <a class="hidden" href="#" onclick="return false;" id="question_9">&nbsp;</a>
+</td>
+<td class="bLight" colspan="5" valign="middle" nowrap="nowrap" align="RIGHT"> </td>
+</tr>
+<tr>
+<td class="reviewTestSubCellForIconBig" rowspan="2" valign="top" align="center"><img id="gs_q9" src="testa_files/grade-correct_u.gif" alt="Correcta" title="Correcta"></td>
+<td colspan="2" width="100%" valign="top"><div class="vtbegenerated inlineVtbegenerated">
+ En un diagrama de actividad ¿puede no haber estado final?
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+<table cellspacing="0" cellpadding="5">
+  <tbody><tr>
+        <td valign="top">
+          <span class="label">Respuesta seleccionada:</span>
+        </td>
+        <td valign="top">
+          <div class="reviewQuestionsAnswerDiv">
+            <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+            <span class="answerTextSpan">
+              
+<div class="vtbegenerated inlineVtbegenerated">
+ Verdadero 
+</div>
+</span>
+          </div>
+        </td>
+      </tr>
+  <tr>
+          <td valign="top">
+      <span class="label">Respuestas:</span>
+      </td>
+          
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427298_1_0">Verdadero </label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427298_1_1">Falso</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        </tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table>
+  </div>
+
+ <div id="_19427298_1previewModule" class="moduleSample">
+ </div>
+</li>
+
+
+
+
+<li id="contentListItem:_19427299_1" class="clearfix liItem read">
+
+
+<div class="item clearfix contentListRightOffset" id="_19427299_1">
+
+ <h3 id="anonymous_element_18">
+  <span class="reorder editmode hideme"><span><img src="testa_files/generic_updown.gif" alt=""></span></span>
+
+
+
+     Pregunta 10
+ </h3>
+   
+ </div>
+
+<div class="contentListRight">
+  <p class="taskbuttondiv">0 de 1 puntos</p>
+</div>
+
+
+<div class="details">
+    
+<table width="100%" cellspacing="0" cellpadding="2" border="0">
+<tbody><tr>
+  <td class="bLight" valign="middle" nowrap="nowrap">
+ <a class="hidden" href="#" onclick="return false;" id="question_10">&nbsp;</a>
+</td>
+<td class="bLight" colspan="5" valign="middle" nowrap="nowrap" align="RIGHT"> </td>
+</tr>
+<tr>
+<td class="reviewTestSubCellForIconBig" rowspan="2" valign="top" align="center"><img id="gs_q10" src="testa_files/grade-incorrect_u.gif" alt="Incorrecta" title="Incorrecta"></td>
+<td colspan="2" width="100%" valign="top"><div class="vtbegenerated inlineVtbegenerated">
+ <p><span style="font-size: 12.0pt; line-height: 107%; font-family: 'Times New Roman',serif;">Si dibujamos el diagrama de actividad de este caso de uso, ¿cuántas bifurcaciones dibujaríamos?</span></p> 
+ <p><img src="testa_files/1.jpg" width="670" height="305"></p>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+<table cellspacing="0" cellpadding="5">
+  <tbody><tr>
+        <td valign="top">
+          <span class="label">Respuesta seleccionada:</span>
+        </td>
+        <td valign="top">
+          <div class="reviewQuestionsAnswerDiv">
+            <span class="incorrectAnswerFlag"><img src="testa_files/x.gif" alt="Incorrecta"></span><span class="answerNumLabelSpan"></span>
+            <span class="answerTextSpan">
+              
+<div class="vtbegenerated inlineVtbegenerated">
+ <p>2</p>
+</div>
+</span>
+          </div>
+        </td>
+      </tr>
+  <tr>
+          <td valign="top">
+      <span class="label">Respuestas:</span>
+      </td>
+          
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427299_1_0"><p>Ninguna</p></label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427299_1_1"><p>2</p></label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427299_1_2"><p>3</p></label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427299_1_3"><p>4</p></label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427299_1_4"><p>5</p></label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427299_1_5"><p>6</p></label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        </tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table>
+  </div>
+
+ <div id="_19427299_1previewModule" class="moduleSample">
+ </div>
+</li>
+
+
+
+
+<li id="contentListItem:_19427300_1" class="clearfix liItem read">
+
+
+<div class="item clearfix contentListRightOffset" id="_19427300_1">
+
+ <h3 id="anonymous_element_19">
+  <span class="reorder editmode hideme"><span><img src="testa_files/generic_updown.gif" alt=""></span></span>
+
+
+
+     Pregunta 11
+ </h3>
+   
+ </div>
+
+<div class="contentListRight">
+  <p class="taskbuttondiv">1 de 1 puntos</p>
+</div>
+
+
+<div class="details">
+    
+<table width="100%" cellspacing="0" cellpadding="2" border="0">
+<tbody><tr>
+  <td class="bLight" valign="middle" nowrap="nowrap">
+ <a class="hidden" href="#" onclick="return false;" id="question_11">&nbsp;</a>
+</td>
+<td class="bLight" colspan="5" valign="middle" nowrap="nowrap" align="RIGHT"> </td>
+</tr>
+<tr>
+<td class="reviewTestSubCellForIconBig" rowspan="2" valign="top" align="center"><img id="gs_q11" src="testa_files/grade-correct_u.gif" alt="Correcta" title="Correcta"></td>
+<td colspan="2" width="100%" valign="top"><div class="vtbegenerated inlineVtbegenerated">
+ <p>Si dibujamos el diagrama de actividad de este caso de uso deberíamos incluir, al menos, una barra de sincronización.</p> 
+ <p><img src="testa_files/1(1).jpg" width="670" height="305"></p>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+<table cellspacing="0" cellpadding="5">
+  <tbody><tr>
+        <td valign="top">
+          <span class="label">Respuesta seleccionada:</span>
+        </td>
+        <td valign="top">
+          <div class="reviewQuestionsAnswerDiv">
+            <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+            <span class="answerTextSpan">
+              
+<div class="vtbegenerated inlineVtbegenerated">
+ <p>Verdadero</p>
+</div>
+</span>
+          </div>
+        </td>
+      </tr>
+  <tr>
+          <td valign="top">
+      <span class="label">Respuestas:</span>
+      </td>
+          
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427300_1_0"><p>Verdadero</p></label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427300_1_1"><p>Falso</p></label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        </tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table>
+  </div>
+
+ <div id="_19427300_1previewModule" class="moduleSample">
+ </div>
+</li>
+
+
+
+
+<li id="contentListItem:_19427301_1" class="clearfix liItem read">
+
+
+<div class="item clearfix contentListRightOffset" id="_19427301_1">
+
+ <h3 id="anonymous_element_20">
+  <span class="reorder editmode hideme"><span><img src="testa_files/generic_updown.gif" alt=""></span></span>
+
+
+
+     Pregunta 12
+ </h3>
+   
+ </div>
+
+<div class="contentListRight">
+  <p class="taskbuttondiv">0 de 1 puntos</p>
+</div>
+
+
+<div class="details">
+    
+<table width="100%" cellspacing="0" cellpadding="2" border="0">
+<tbody><tr>
+  <td class="bLight" valign="middle" nowrap="nowrap">
+ <a class="hidden" href="#" onclick="return false;" id="question_12">&nbsp;</a>
+</td>
+<td class="bLight" colspan="5" valign="middle" nowrap="nowrap" align="RIGHT"> </td>
+</tr>
+<tr>
+<td class="reviewTestSubCellForIconBig" rowspan="2" valign="top" align="center"><img id="gs_q12" src="testa_files/grade-incorrect_u.gif" alt="Incorrecta" title="Incorrecta"></td>
+<td colspan="2" width="100%" valign="top"><div class="vtbegenerated inlineVtbegenerated">
+ Dado el siguiente supuesto: Cada vez que un paciente nuevo llega a la 
+consulta el médico debe crear su historia clínica y siempre que vea a un
+ paciente debe actualizarla. Además el médico puede emitir certificados 
+médicos. En este caso también actualizará la historia clínica del 
+paciente. Si el certificado lo pide un paciente mayor de 65 años deberá 
+emitir además del certificado normal uno especial. Finalmente el sistema
+ emitirá mensualmente de forma automática un informe dirigido al médico 
+con el resumen del historial de sus pacientes. ¿Cuáles son los actores 
+del diagrama de casos de uso que representa este supuesto?
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+<table cellspacing="0" cellpadding="5">
+  <tbody><tr>
+        <td valign="top">
+          <span class="label">Respuesta seleccionada:</span>
+        </td>
+        <td valign="top">
+          <div class="reviewQuestionsAnswerDiv">
+            <span class="incorrectAnswerFlag"><img src="testa_files/x.gif" alt="Incorrecta"></span><span class="answerNumLabelSpan"></span>
+            <span class="answerTextSpan">
+              
+<div class="vtbegenerated inlineVtbegenerated">
+ Médico y paciente
+</div>
+</span>
+          </div>
+        </td>
+      </tr>
+  <tr>
+          <td valign="top">
+      <span class="label">Respuestas:</span>
+      </td>
+          
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427301_1_0">Médico</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427301_1_1">Médico, paciente y sistema</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427301_1_2">Médico y sistema </label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427301_1_3">Médico y paciente</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        </tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table>
+  </div>
+
+ <div id="_19427301_1previewModule" class="moduleSample">
+ </div>
+</li>
+
+
+
+
+<li id="contentListItem:_19427302_1" class="clearfix liItem read">
+
+
+<div class="item clearfix contentListRightOffset" id="_19427302_1">
+
+ <h3 id="anonymous_element_21">
+  <span class="reorder editmode hideme"><span><img src="testa_files/generic_updown.gif" alt=""></span></span>
+
+
+
+     Pregunta 13
+ </h3>
+   
+ </div>
+
+<div class="contentListRight">
+  <p class="taskbuttondiv">0 de 1 puntos</p>
+</div>
+
+
+<div class="details">
+    
+<table width="100%" cellspacing="0" cellpadding="2" border="0">
+<tbody><tr>
+  <td class="bLight" valign="middle" nowrap="nowrap">
+ <a class="hidden" href="#" onclick="return false;" id="question_13">&nbsp;</a>
+</td>
+<td class="bLight" colspan="5" valign="middle" nowrap="nowrap" align="RIGHT"> </td>
+</tr>
+<tr>
+<td class="reviewTestSubCellForIconBig" rowspan="2" valign="top" align="center"><img id="gs_q13" src="testa_files/grade-incorrect_u.gif" alt="Incorrecta" title="Incorrecta"></td>
+<td colspan="2" width="100%" valign="top"><div class="vtbegenerated inlineVtbegenerated">
+ <p>Dado el siguiente supuesto: Cada vez que un paciente nuevo llega a 
+la consulta el médico debe crear su historia clínica y siempre que vea a
+ un paciente debe actualizarla. Además el médico puede emitir 
+certificados médicos. En este caso también actualizará la historia 
+clínica del paciente. Si el certificado lo pide un paciente mayor de 65 
+años deberá emitir además del certificado normal uno especial. 
+Finalmente el sistema emitirá mensualmente de forma automática un 
+informe dirigido al médico con el resumen del historial de sus 
+pacientes. Las siguientes imágenes muestran una parte del diagrama de 
+casos de uso que representa este supuesto ¿Cuál es la correcta?</p> 
+ <p><img src="testa_files/2.jpg" width="792" height="351"></p>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+<table cellspacing="0" cellpadding="5">
+  <tbody><tr>
+        <td valign="top">
+          <span class="label">Respuesta seleccionada:</span>
+        </td>
+        <td valign="top">
+          <div class="reviewQuestionsAnswerDiv">
+            <span class="incorrectAnswerFlag"><img src="testa_files/x.gif" alt="Incorrecta"></span><span class="answerNumLabelSpan"></span>
+            <span class="answerTextSpan">
+              
+<div class="vtbegenerated inlineVtbegenerated">
+ <p>a</p>
+</div>
+</span>
+          </div>
+        </td>
+      </tr>
+  <tr>
+          <td valign="top">
+      <span class="label">Respuestas:</span>
+      </td>
+          
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427302_1_0"><p>a</p></label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427302_1_1"><p>b</p></label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427302_1_2"><p>c</p></label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427302_1_3"><p>d</p></label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        </tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table>
+  </div>
+
+ <div id="_19427302_1previewModule" class="moduleSample">
+ </div>
+</li>
+
+
+
+
+<li id="contentListItem:_19427303_1" class="clearfix liItem read">
+
+
+<div class="item clearfix contentListRightOffset" id="_19427303_1">
+
+ <h3 id="anonymous_element_22">
+  <span class="reorder editmode hideme"><span><img src="testa_files/generic_updown.gif" alt=""></span></span>
+
+
+
+     Pregunta 14
+ </h3>
+   
+ </div>
+
+<div class="contentListRight">
+  <p class="taskbuttondiv">0 de 1 puntos</p>
+</div>
+
+
+<div class="details">
+    
+<table width="100%" cellspacing="0" cellpadding="2" border="0">
+<tbody><tr>
+  <td class="bLight" valign="middle" nowrap="nowrap">
+ <a class="hidden" href="#" onclick="return false;" id="question_14">&nbsp;</a>
+</td>
+<td class="bLight" colspan="5" valign="middle" nowrap="nowrap" align="RIGHT"> </td>
+</tr>
+<tr>
+<td class="reviewTestSubCellForIconBig" rowspan="2" valign="top" align="center"><img id="gs_q14" src="testa_files/grade-incorrect_u.gif" alt="Incorrecta" title="Incorrecta"></td>
+<td colspan="2" width="100%" valign="top"><div class="vtbegenerated inlineVtbegenerated">
+ En una empresa los empleados pueden ser comerciales, técnicos y jefes 
+de ventas. También hay empleados que no tienen ninguna categoría. 
+Algunos empleados pueden ser jefes de ventas y comerciales a la vez. En 
+el modelo E/R de una aplicación de la empresa incluimos las entidades 
+empleado, comercial, técnico y jefe de ventas y la relación de jerarquía
+ entre empleado (padre de la relación) y comercial, técnico y jefe de 
+ventas (hijos de la relación). Esta relación es:
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+<table cellspacing="0" cellpadding="5">
+  <tbody><tr>
+        <td valign="top">
+          <span class="label">Respuesta seleccionada:</span>
+        </td>
+        <td valign="top">
+          <div class="reviewQuestionsAnswerDiv">
+            <span class="incorrectAnswerFlag"><img src="testa_files/x.gif" alt="Incorrecta"></span><span class="answerNumLabelSpan"></span>
+            <span class="answerTextSpan">
+              
+<div class="vtbegenerated inlineVtbegenerated">
+ Total y disjunta
+</div>
+</span>
+          </div>
+        </td>
+      </tr>
+  <tr>
+          <td valign="top">
+      <span class="label">Respuestas:</span>
+      </td>
+          
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427303_1_0">Incorrecta</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427303_1_1">Total y no disjunta</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427303_1_2">No total y no disjunta </label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427303_1_3">Total y disjunta</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427303_1_4">No total y no disjunta</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        </tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table>
+  </div>
+
+ <div id="_19427303_1previewModule" class="moduleSample">
+ </div>
+</li>
+
+
+
+
+<li id="contentListItem:_19427304_1" class="clearfix liItem read">
+
+
+<div class="item clearfix contentListRightOffset" id="_19427304_1">
+
+ <h3 id="anonymous_element_23">
+  <span class="reorder editmode hideme"><span><img src="testa_files/generic_updown.gif" alt=""></span></span>
+
+
+
+     Pregunta 15
+ </h3>
+   
+ </div>
+
+<div class="contentListRight">
+  <p class="taskbuttondiv">0 de 1 puntos</p>
+</div>
+
+
+<div class="details">
+    
+<table width="100%" cellspacing="0" cellpadding="2" border="0">
+<tbody><tr>
+  <td class="bLight" valign="middle" nowrap="nowrap">
+ <a class="hidden" href="#" onclick="return false;" id="question_15">&nbsp;</a>
+</td>
+<td class="bLight" colspan="5" valign="middle" nowrap="nowrap" align="RIGHT"> </td>
+</tr>
+<tr>
+<td class="reviewTestSubCellForIconBig" rowspan="2" valign="top" align="center"><img id="gs_q15" src="testa_files/grade-incorrect_u.gif" alt="Incorrecta" title="Incorrecta"></td>
+<td colspan="2" width="100%" valign="top"><div class="vtbegenerated inlineVtbegenerated">
+ <p><span style="font-size: 12.0pt; line-height: 107%; font-family: 'Times New Roman',serif;">Dado
+ el siguiente supuesto: “Una pequeña empresa debe mantener cierta 
+información. Para cada artículo: número de artículo (único) y 
+descripción del artículo. Para cada cliente: número de cliente (único) y
+ nombre. Los clientes pueden ser empresas o particulares. De las 
+empresas nos interesa saber su saldo y su límite de crédito. Cada pedido
+ tiene el número de pedido (único), dirección de envío, fecha del pedido
+ y varias líneas (al menos una). Cada línea se identifica por un número 
+secuencial (empezando el número en 1 en cada pedido). En cada línea se 
+pide un único artículo y se indica la cantidad que se pide. Un pedido 
+siempre es realizado por un único cliente que puede realizar ninguno o 
+muchos pedidos. Los artículos los suministran fábricas. Para cada 
+fábrica se usará: número de la fábrica (único) y teléfono de contacto. 
+Se desea saber que artículos suministra cada fábrica, que puede 
+suministrar más de uno. Solo se guarda información de las fábricas que 
+suministran algún artículo. Todos los artículos tienen que tener alguna 
+fábrica que los suministre, pero puede ser más de una. Nos interesa 
+conocer el precio que cada fábrica pide por cada artículo que 
+suministra.”. ¿Cuál es el máximo número de tablas posible que existirían
+ en la Base de Datos Relacional Normalizada del supuesto dado?</span></p>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+<table cellspacing="0" cellpadding="5">
+  <tbody><tr>
+        <td valign="top">
+          <span class="label">Respuesta seleccionada:</span>
+        </td>
+        <td valign="top">
+          <div class="reviewQuestionsAnswerDiv">
+            <span class="incorrectAnswerFlag"><img src="testa_files/x.gif" alt="Incorrecta"></span><span class="answerNumLabelSpan"></span>
+            <span class="answerTextSpan">
+              
+<div class="vtbegenerated inlineVtbegenerated">
+ <p>6</p>
+</div>
+</span>
+          </div>
+        </td>
+      </tr>
+  <tr>
+          <td valign="top">
+      <span class="label">Respuestas:</span>
+      </td>
+          
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427304_1_0"><p>10</p></label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427304_1_1"><p>9</p></label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427304_1_2"><p>8</p></label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427304_1_3"><p>7</p></label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427304_1_4"><p>6</p></label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427304_1_5"><p>5</p></label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        </tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table>
+  </div>
+
+ <div id="_19427304_1previewModule" class="moduleSample">
+ </div>
+</li>
+
+
+
+
+<li id="contentListItem:_19427305_1" class="clearfix liItem read">
+
+
+<div class="item clearfix contentListRightOffset" id="_19427305_1">
+
+ <h3 id="anonymous_element_24">
+  <span class="reorder editmode hideme"><span><img src="testa_files/generic_updown.gif" alt=""></span></span>
+
+
+
+     Pregunta 16
+ </h3>
+   
+ </div>
+
+<div class="contentListRight">
+  <p class="taskbuttondiv">0 de 1 puntos</p>
+</div>
+
+
+<div class="details">
+    
+<table width="100%" cellspacing="0" cellpadding="2" border="0">
+<tbody><tr>
+  <td class="bLight" valign="middle" nowrap="nowrap">
+ <a class="hidden" href="#" onclick="return false;" id="question_16">&nbsp;</a>
+</td>
+<td class="bLight" colspan="5" valign="middle" nowrap="nowrap" align="RIGHT"> </td>
+</tr>
+<tr>
+<td class="reviewTestSubCellForIconBig" rowspan="2" valign="top" align="center"><img id="gs_q16" src="testa_files/grade-incorrect_u.gif" alt="Incorrecta" title="Incorrecta"></td>
+<td colspan="2" width="100%" valign="top"><div class="vtbegenerated inlineVtbegenerated">
+ Dado el siguiente supuesto: “Una pequeña empresa debe mantener cierta 
+información. Para cada artículo: número de artículo (único) y 
+descripción del artículo. Para cada cliente: número de cliente (único) y
+ nombre. Los clientes pueden ser empresas o particulares. De las 
+empresas nos interesa saber su saldo y su límite de crédito. Cada pedido
+ tiene el número de pedido (único), dirección de envío, fecha del pedido
+ y varias líneas (al menos una). Cada línea se identifica por un número 
+secuencial (empezando el número en 1 en cada pedido). En cada línea se 
+pide un único artículo y se indica la cantidad que se pide. Un pedido 
+siempre es realizado por un único cliente que puede realizar ninguno o 
+muchos pedidos. Los artículos los suministran fábricas. Para cada 
+fábrica se usará: número de la fábrica (único) y teléfono de contacto. 
+Se desea saber que artículos suministra cada fábrica, que puede 
+suministrar más de uno. Solo se guarda información de las fábricas que 
+suministran algún artículo. Todos los artículos tienen que tener alguna 
+fábrica que los suministre, pero puede ser más de una. Nos interesa 
+conocer el precio que cada fábrica pide por cada artículo que 
+suministra.”. En el modelo E/R correspondiente ¿dónde estará el atributo
+ ‘precio’?
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+<table cellspacing="0" cellpadding="5">
+  <tbody><tr>
+        <td valign="top">
+          <span class="label">Respuesta seleccionada:</span>
+        </td>
+        <td valign="top">
+          <div class="reviewQuestionsAnswerDiv">
+            <span class="incorrectAnswerFlag"><img src="testa_files/x.gif" alt="Incorrecta"></span><span class="answerNumLabelSpan"></span>
+            <span class="answerTextSpan">
+              
+<div class="vtbegenerated inlineVtbegenerated">
+ En la relación entre Pedido y Artículo
+</div>
+</span>
+          </div>
+        </td>
+      </tr>
+  <tr>
+          <td valign="top">
+      <span class="label">Respuestas:</span>
+      </td>
+          
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427305_1_0">En la entidad Línea de pedido</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427305_1_1">En la entidad Artículo</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427305_1_2">En la entidad Fábrica</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427305_1_3">En la relación entre Pedido y Artículo</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427305_1_4">En la relación entre Línea de pedido y Artículo</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427305_1_5">En la relación entre Fábrica y Artículo </label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        </tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table>
+  </div>
+
+ <div id="_19427305_1previewModule" class="moduleSample">
+ </div>
+</li>
+
+
+
+
+<li id="contentListItem:_19427306_1" class="clearfix liItem read">
+
+
+<div class="item clearfix contentListRightOffset" id="_19427306_1">
+
+ <h3 id="anonymous_element_25">
+  <span class="reorder editmode hideme"><span><img src="testa_files/generic_updown.gif" alt=""></span></span>
+
+
+
+     Pregunta 17
+ </h3>
+   
+ </div>
+
+<div class="contentListRight">
+  <p class="taskbuttondiv">0 de 1 puntos</p>
+</div>
+
+
+<div class="details">
+    
+<table width="100%" cellspacing="0" cellpadding="2" border="0">
+<tbody><tr>
+  <td class="bLight" valign="middle" nowrap="nowrap">
+ <a class="hidden" href="#" onclick="return false;" id="question_17">&nbsp;</a>
+</td>
+<td class="bLight" colspan="5" valign="middle" nowrap="nowrap" align="RIGHT"> </td>
+</tr>
+<tr>
+<td class="reviewTestSubCellForIconBig" rowspan="2" valign="top" align="center"><img id="gs_q17" src="testa_files/grade-incorrect_u.gif" alt="Incorrecta" title="Incorrecta"></td>
+<td colspan="2" width="100%" valign="top"><div class="vtbegenerated inlineVtbegenerated">
+ En un diagrama de clases conceptual:
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+<table cellspacing="0" cellpadding="5">
+  <tbody><tr>
+        <td valign="top">
+          <span class="label">Respuesta seleccionada:</span>
+        </td>
+        <td valign="top">
+          <div class="reviewQuestionsAnswerDiv">
+            <span class="incorrectAnswerFlag"><img src="testa_files/x.gif" alt="Incorrecta"></span><span class="answerNumLabelSpan"></span>
+            <span class="answerTextSpan">
+              
+<div class="vtbegenerated inlineVtbegenerated">
+ No se permite la herencia simple
+</div>
+</span>
+          </div>
+        </td>
+      </tr>
+  <tr>
+          <td valign="top">
+      <span class="label">Respuestas:</span>
+      </td>
+          
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427306_1_0">No es posible representar relaciones de herencia</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427306_1_1">No se permite la herencia simple</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427306_1_2">No se permite la herencia múltiple</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427306_1_3">Todas las anteriores</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427306_1_4">Ninguna de las anteriores </label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        </tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table>
+  </div>
+
+ <div id="_19427306_1previewModule" class="moduleSample">
+ </div>
+</li>
+
+
+
+
+<li id="contentListItem:_19427307_1" class="clearfix liItem read">
+
+
+<div class="item clearfix contentListRightOffset" id="_19427307_1">
+
+ <h3 id="anonymous_element_26">
+  <span class="reorder editmode hideme"><span><img src="testa_files/generic_updown.gif" alt=""></span></span>
+
+
+
+     Pregunta 18
+ </h3>
+   
+ </div>
+
+<div class="contentListRight">
+  <p class="taskbuttondiv">0 de 1 puntos</p>
+</div>
+
+
+<div class="details">
+    
+<table width="100%" cellspacing="0" cellpadding="2" border="0">
+<tbody><tr>
+  <td class="bLight" valign="middle" nowrap="nowrap">
+ <a class="hidden" href="#" onclick="return false;" id="question_18">&nbsp;</a>
+</td>
+<td class="bLight" colspan="5" valign="middle" nowrap="nowrap" align="RIGHT"> </td>
+</tr>
+<tr>
+<td class="reviewTestSubCellForIconBig" rowspan="2" valign="top" align="center"><img id="gs_q18" src="testa_files/grade-incorrect_u.gif" alt="Incorrecta" title="Incorrecta"></td>
+<td colspan="2" width="100%" valign="top"><div class="vtbegenerated inlineVtbegenerated">
+ Marca la frase correcta, relacionada con el modelo de clases conceptual
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+<table cellspacing="0" cellpadding="5">
+  <tbody><tr>
+        <td valign="top">
+          <span class="label">Respuesta seleccionada:</span>
+        </td>
+        <td valign="top">
+          <div class="reviewQuestionsAnswerDiv">
+            <span class="incorrectAnswerFlag"><img src="testa_files/x.gif" alt="Incorrecta"></span><span class="answerNumLabelSpan"></span>
+            <span class="answerTextSpan">
+              
+<div class="vtbegenerated inlineVtbegenerated">
+ Las clases de asociación no pueden tener atributos
+</div>
+</span>
+          </div>
+        </td>
+      </tr>
+  <tr>
+          <td valign="top">
+      <span class="label">Respuestas:</span>
+      </td>
+          
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427307_1_0">El modelo conceptual debe incluir las relaciones de dependencia entre las clases, necesarias para el sistema</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427307_1_1">Una clase debe tener al menos 1 operación</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427307_1_2">Una relación puede llevar como cardinalidad un número superior a 1 </label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427307_1_3">Las clases de asociación no pueden tener atributos</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427307_1_4">Todas las anteriores son correctas</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427307_1_5">Ninguna de las anteriores es correcta</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        </tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table>
+  </div>
+
+ <div id="_19427307_1previewModule" class="moduleSample">
+ </div>
+</li>
+
+
+
+
+<li id="contentListItem:_19427308_1" class="clearfix liItem read">
+
+
+<div class="item clearfix contentListRightOffset" id="_19427308_1">
+
+ <h3 id="anonymous_element_27">
+  <span class="reorder editmode hideme"><span><img src="testa_files/generic_updown.gif" alt=""></span></span>
+
+
+
+     Pregunta 19
+ </h3>
+   
+ </div>
+
+<div class="contentListRight">
+  <p class="taskbuttondiv">0 de 1 puntos</p>
+</div>
+
+
+<div class="details">
+    
+<table width="100%" cellspacing="0" cellpadding="2" border="0">
+<tbody><tr>
+  <td class="bLight" valign="middle" nowrap="nowrap">
+ <a class="hidden" href="#" onclick="return false;" id="question_19">&nbsp;</a>
+</td>
+<td class="bLight" colspan="5" valign="middle" nowrap="nowrap" align="RIGHT"> </td>
+</tr>
+<tr>
+<td class="reviewTestSubCellForIconBig" rowspan="2" valign="top" align="center"><img id="gs_q19" src="testa_files/grade-incorrect_u.gif" alt="Incorrecta" title="Incorrecta"></td>
+<td colspan="2" width="100%" valign="top"><div class="vtbegenerated inlineVtbegenerated">
+ <p>Dado el siguiente supuesto: “Tenemos un Sistema de Gestión 
+Académica, con información de varias universidades que se componen, cada
+ una de ellas, de varios departamentos. En cada universidad estudian y 
+trabajan alumnos y profesores, con la limitación de que solo pueden 
+estudiar y trabajar en una universidad. Cada profesor está vinculado a 
+un sólo departamento, en el cual podrá haber más profesores. Existe un 
+director de cada departamento, que es también profesor. Cada profesor 
+puede ser tutor de ninguno o varios alumnos, pero cada alumno tiene 
+siempre un único tutor.”. Las siguientes imágenes muestran una parte del
+ diagrama de clases conceptual que representa el supuesto dado ¿cuál es 
+la correcta?</p> 
+ <p><img src="testa_files/3.jpg" width="749" height="512"></p>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+<table cellspacing="0" cellpadding="5">
+  <tbody><tr>
+        <td valign="top">
+          <span class="label">Respuesta seleccionada:</span>
+        </td>
+        <td valign="top">
+          <div class="reviewQuestionsAnswerDiv">
+            <span class="incorrectAnswerFlag"><img src="testa_files/x.gif" alt="Incorrecta"></span><span class="answerNumLabelSpan"></span>
+            <span class="answerTextSpan">
+              
+<div class="vtbegenerated inlineVtbegenerated">
+ <p>a</p>
+</div>
+</span>
+          </div>
+        </td>
+      </tr>
+  <tr>
+          <td valign="top">
+      <span class="label">Respuestas:</span>
+      </td>
+          
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427308_1_0"><p>a</p></label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427308_1_1"><p>b</p></label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427308_1_2"><p>c</p></label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427308_1_3"><p>d</p></label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        </tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table>
+  </div>
+
+ <div id="_19427308_1previewModule" class="moduleSample">
+ </div>
+</li>
+
+
+
+
+<li id="contentListItem:_19427309_1" class="clearfix liItem read">
+
+
+<div class="item clearfix contentListRightOffset" id="_19427309_1">
+
+ <h3 id="anonymous_element_28">
+  <span class="reorder editmode hideme"><span><img src="testa_files/generic_updown.gif" alt=""></span></span>
+
+
+
+     Pregunta 20
+ </h3>
+   
+ </div>
+
+<div class="contentListRight">
+  <p class="taskbuttondiv">1 de 1 puntos</p>
+</div>
+
+
+<div class="details">
+    
+<table width="100%" cellspacing="0" cellpadding="2" border="0">
+<tbody><tr>
+  <td class="bLight" valign="middle" nowrap="nowrap">
+ <a class="hidden" href="#" onclick="return false;" id="question_20">&nbsp;</a>
+</td>
+<td class="bLight" colspan="5" valign="middle" nowrap="nowrap" align="RIGHT"> </td>
+</tr>
+<tr>
+<td class="reviewTestSubCellForIconBig" rowspan="2" valign="top" align="center"><img id="gs_q20" src="testa_files/grade-correct_u.gif" alt="Correcta" title="Correcta"></td>
+<td colspan="2" width="100%" valign="top"><div class="vtbegenerated inlineVtbegenerated">
+ Dado el siguiente supuesto: “Tenemos un Sistema de Gestión Académica, 
+con información de varias universidades que se componen, cada una de 
+ellas, de varios departamentos. En cada universidad estudian y trabajan 
+alumnos y profesores, con la limitación de que solo pueden estudiar y 
+trabajar en una universidad. Cada profesor está vinculado a un sólo 
+departamento, en el cual podrá haber más profesores. Existe un director 
+de cada departamento, que es también profesor. Cada profesor puede ser 
+tutor de ninguno o varios alumnos, pero cada alumno tiene siempre un 
+único tutor.”. Según el supuesto dado, en el diagrama de clases 
+conceptual correspondiente ¿de qué tipo es la relación entre universidad
+ y departamento?
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+<table cellspacing="0" cellpadding="5">
+  <tbody><tr>
+        <td valign="top">
+          <span class="label">Respuesta seleccionada:</span>
+        </td>
+        <td valign="top">
+          <div class="reviewQuestionsAnswerDiv">
+            <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+            <span class="answerTextSpan">
+              
+<div class="vtbegenerated inlineVtbegenerated">
+ Composición 
+</div>
+</span>
+          </div>
+        </td>
+      </tr>
+  <tr>
+          <td valign="top">
+      <span class="label">Respuestas:</span>
+      </td>
+          
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427309_1_0">Asociación, pero no agregación ni composición</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427309_1_1">Agregación</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427309_1_2">Composición </label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427309_1_3">Dependencia</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427309_1_4">Generalización</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        </tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table>
+  </div>
+
+ <div id="_19427309_1previewModule" class="moduleSample">
+ </div>
+</li>
+
+
+
+
+<li id="contentListItem:_19427310_1" class="clearfix liItem read">
+
+
+<div class="item clearfix contentListRightOffset" id="_19427310_1">
+
+ <h3 id="anonymous_element_29">
+  <span class="reorder editmode hideme"><span><img src="testa_files/generic_updown.gif" alt=""></span></span>
+
+
+
+     Pregunta 21
+ </h3>
+   
+ </div>
+
+<div class="contentListRight">
+  <p class="taskbuttondiv">1 de 1 puntos</p>
+</div>
+
+
+<div class="details">
+    
+<table width="100%" cellspacing="0" cellpadding="2" border="0">
+<tbody><tr>
+  <td class="bLight" valign="middle" nowrap="nowrap">
+ <a class="hidden" href="#" onclick="return false;" id="question_21">&nbsp;</a>
+</td>
+<td class="bLight" colspan="5" valign="middle" nowrap="nowrap" align="RIGHT"> </td>
+</tr>
+<tr>
+<td class="reviewTestSubCellForIconBig" rowspan="2" valign="top" align="center"><img id="gs_q21" src="testa_files/grade-correct_u.gif" alt="Correcta" title="Correcta"></td>
+<td colspan="2" width="100%" valign="top"><div class="vtbegenerated inlineVtbegenerated">
+ ¿Cuál de las siguientes técnicas, además de encontrar defectos debe, necesariamente, proponer soluciones?
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+<table cellspacing="0" cellpadding="5">
+  <tbody><tr>
+        <td valign="top">
+          <span class="label">Respuesta seleccionada:</span>
+        </td>
+        <td valign="top">
+          <div class="reviewQuestionsAnswerDiv">
+            <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+            <span class="answerTextSpan">
+              
+<div class="vtbegenerated inlineVtbegenerated">
+ Walkthroughs 
+</div>
+</span>
+          </div>
+        </td>
+      </tr>
+  <tr>
+          <td valign="top">
+      <span class="label">Respuestas:</span>
+      </td>
+          
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427310_1_0">Revisiones de gestión</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427310_1_1">Revisiones técnicas</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427310_1_2">Inspecciones</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427310_1_3">Walkthroughs </label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427310_1_4">Todas las anteriores</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427310_1_5">Ninguna de las anteriores</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        </tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table>
+  </div>
+
+ <div id="_19427310_1previewModule" class="moduleSample">
+ </div>
+</li>
+
+
+
+
+<li id="contentListItem:_19427311_1" class="clearfix liItem read">
+
+
+<div class="item clearfix contentListRightOffset" id="_19427311_1">
+
+ <h3 id="anonymous_element_30">
+  <span class="reorder editmode hideme"><span><img src="testa_files/generic_updown.gif" alt=""></span></span>
+
+
+
+     Pregunta 22
+ </h3>
+   
+ </div>
+
+<div class="contentListRight">
+  <p class="taskbuttondiv">0 de 1 puntos</p>
+</div>
+
+
+<div class="details">
+    
+<table width="100%" cellspacing="0" cellpadding="2" border="0">
+<tbody><tr>
+  <td class="bLight" valign="middle" nowrap="nowrap">
+ <a class="hidden" href="#" onclick="return false;" id="question_22">&nbsp;</a>
+</td>
+<td class="bLight" colspan="5" valign="middle" nowrap="nowrap" align="RIGHT"> </td>
+</tr>
+<tr>
+<td class="reviewTestSubCellForIconBig" rowspan="2" valign="top" align="center"><img id="gs_q22" src="testa_files/grade-incorrect_u.gif" alt="Incorrecta" title="Incorrecta"></td>
+<td colspan="2" width="100%" valign="top"><div class="vtbegenerated inlineVtbegenerated">
+ Eres un consultor de calidad del software y debes comprobar, sin 
+proponer soluciones, que el diseño de un producto se ajusta a las 
+necesidades del cliente, ¿qué técnica de revisión de software 
+utilizarías?
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+<table cellspacing="0" cellpadding="5">
+  <tbody><tr>
+        <td valign="top">
+          <span class="label">Respuesta seleccionada:</span>
+        </td>
+        <td valign="top">
+          <div class="reviewQuestionsAnswerDiv">
+            <span class="incorrectAnswerFlag"><img src="testa_files/x.gif" alt="Incorrecta"></span><span class="answerNumLabelSpan"></span>
+            <span class="answerTextSpan">
+              
+<div class="vtbegenerated inlineVtbegenerated">
+ Ninguna de las anteriores
+</div>
+</span>
+          </div>
+        </td>
+      </tr>
+  <tr>
+          <td valign="top">
+      <span class="label">Respuestas:</span>
+      </td>
+          
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427311_1_0">Pruebas</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427311_1_1">Revisiones de gestión</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427311_1_2">Revisiones técnicas </label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427311_1_3">Walkthrough</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427311_1_4">Ninguna de las anteriores</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        </tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table>
+  </div>
+
+ <div id="_19427311_1previewModule" class="moduleSample">
+ </div>
+</li>
+
+
+
+
+<li id="contentListItem:_19427312_1" class="clearfix liItem read">
+
+
+<div class="item clearfix contentListRightOffset" id="_19427312_1">
+
+ <h3 id="anonymous_element_31">
+  <span class="reorder editmode hideme"><span><img src="testa_files/generic_updown.gif" alt=""></span></span>
+
+
+
+     Pregunta 23
+ </h3>
+   
+ </div>
+
+<div class="contentListRight">
+  <p class="taskbuttondiv">1 de 1 puntos</p>
+</div>
+
+
+<div class="details">
+    
+<table width="100%" cellspacing="0" cellpadding="2" border="0">
+<tbody><tr>
+  <td class="bLight" valign="middle" nowrap="nowrap">
+ <a class="hidden" href="#" onclick="return false;" id="question_23">&nbsp;</a>
+</td>
+<td class="bLight" colspan="5" valign="middle" nowrap="nowrap" align="RIGHT"> </td>
+</tr>
+<tr>
+<td class="reviewTestSubCellForIconBig" rowspan="2" valign="top" align="center"><img id="gs_q23" src="testa_files/grade-correct_u.gif" alt="Correcta" title="Correcta"></td>
+<td colspan="2" width="100%" valign="top"><div class="vtbegenerated inlineVtbegenerated">
+ Señala la frase correcta:
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="2" valign="top">
+<table cellspacing="0" cellpadding="5">
+  <tbody><tr>
+        <td valign="top">
+          <span class="label">Respuesta seleccionada:</span>
+        </td>
+        <td valign="top">
+          <div class="reviewQuestionsAnswerDiv">
+            <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+            <span class="answerTextSpan">
+              
+<div class="vtbegenerated inlineVtbegenerated">
+ En cuanto tenemos una buena especificación se pueden diseñar los casos de prueba 
+</div>
+</span>
+          </div>
+        </td>
+      </tr>
+  <tr>
+          <td valign="top">
+      <span class="label">Respuestas:</span>
+      </td>
+          
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427312_1_0">El coste de corrección de defectos disminuye a medida que avanza el ciclo de vida</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="correctAnswerFlag"><img src="testa_files/check.gif" alt="Correcto"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427312_1_1">En cuanto tenemos una buena especificación se pueden diseñar los casos de prueba </label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427312_1_2">La probabilidad de nuevos defectos es inversamente proporcional al número de defectos ya encontrados</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427312_1_3">Un caso de prueba es la entrada de datos para una situación de operación del software</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427312_1_4">Todas las anteriores son correctas</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        
+          
+      <tr>
+          <td></td>
+      <td valign="top">
+            <div class="reviewQuestionsAnswerDiv">
+              <span class="spacerImageHolder"></span><span class="answerNumLabelSpan"></span>
+              <span class="answerTextSpan">
+                
+<div class="vtbegenerated inlineVtbegenerated">
+ <label for="mc-ans-_19427312_1_5">Ninguna de las anteriores es correcta</label>
+</div>
+</span>
+            </div>
+          </td>
+            
+        </tr>
+        </tbody></table>
+
+
+
+</td>
+</tr>
+</tbody></table>
+  </div>
+
+ <div id="_19427312_1previewModule" class="moduleSample">
+ </div>
+</li>
+
+</ul>
+
+
+
+
+<!-- Begin bottom list action bar. -->
+<!-- End bottom list action bar. -->
+
+
+<!-- begin edit paging (bottom) -->
+  <!-- end edit paging (bottom) -->
+
+
+</div><p><span class="receiptDate">viernes 4 de noviembre de 2022 17H38' CET</span></p>
+
+
+<p class="backLink">
+
+  <a role="button" href="#" onclick="location.href=&quot;javascript:launch('/webapps/blackboard/content/listContent.jsp?content_id=_2230179_1&amp;course_id=_29723_1&amp;nolaunch_after_review=true');&quot;;">
+    Aceptar
+  </a>
+
+</p>
+
+   </div>
+   
+     </div>
+   </div> 
+   </div>
+   </div>  
+</div></div>
+
+  <script type="text/javascript">page.bundle.addKey('inlineconfirmation.close','Cerrar');page.bundle.addKey('inlineconfirmation.refresh','Actualizar');page.bundle.addKey('hidden.link.close.menu','Fin del menú. Haga clic para volver al elemento asociado.');page.bundle.addKey('hidden.link.close.form','Fin del formulario. Haga clic para volver al elemento asociado.');page.bundle.addKey('lightbox.loading','Cargando...');page.bundle.addKey('yt.stopped','Detenido:');page.bundle.addKey('yt.playing','Reproduciendo:');page.bundle.addKey('yt.cued','Puesto en cola:');page.bundle.addKey('yt.buffering','Almacenando en búfer:');page.bundle.addKey('yt.paused','En pausa:');page.bundle.addKey('yt.ended','Finalizada:');page.bundle.addKey('yt.play','Reproducir');page.bundle.addKey('yt.pause','Pausa');page.bundle.addKey('yt.mute','Silenciar');page.bundle.addKey('yt.unmute','Desactivar silenciado');page.bundle.addKey('lightbox.overlay','{0} se ha abierto como un lightbox superponiéndose a la página actual.');page.bundle.addKey('display.playerControls','Controles del reproductor');page.bundle.addKey('display.videoPlayerControls','Controles del reproductor de video');page.bundle.addKey('display.play','Reproducir');page.bundle.addKey('display.stop','Detener');page.bundle.addKey('display.volumeUp','Subir volumen');page.bundle.addKey('display.volumeDown','Bajar volumen');page.bundle.addKey('display.mute','Silenciar');page.bundle.addKey('display.videoStatus','Estado del video');page.bundle.addKey('display.closePlayerControls','Cerrar controles del reproductor');page.bundle.addKey('display.embeddedVideoPlayer','Reproductor de video incrustado');page.bundle.addKey('display.of','de');page.bundle.addKey('display.view.on.flickr','Ver foto en Flickr');page.bundle.addKey('mashups.content.data.msg','No podemos mostrar el contenido de las herramientas combinadas. Esto sucede cuando el sistema detecta una dirección URL que no es válida. Para solucionar este problema, elimine el elemento de herramienta combinada y vuelva a intentarlo.');page.bundle.addKey('contextmenu.frame.title','Marco de menú');page.bundle.addKey('frameset.contentframe.title','Contenido');page.bundle.addKey('common.pair.paren','{0} ({1})');page.bundle.addKey('session.timeout.warning.dialog.title','La sesión finalizará pronto.');page.bundle.addKey('session.timeout.warning.dialog.body','La sesión está inactiva. Seleccione <em>Cerrar</em> para reiniciar la sesión, o esta finalizará.');page.bundle.addKey('session.timeout.warning.dialog.button.close','Cerrar');page.bundle.addKey('session.timeout.warning.dialog.checkSessionTimeout.err','session.timeout.warning.dialog.checkSessionTimeout.err');page.bundle.addKey('coursemenu.show','Mostrar menú Curso');page.bundle.addKey('coursemenu.hide','Ocultar menú Curso');page.bundle.addKey('dynamictree.expand','Expandir');page.bundle.addKey('dynamictree.collapse','Contraer');page.bundle.addKey('dynamictree.expand.folder','Expandir árbol de carpetas {0}');page.bundle.addKey('dynamictree.collapse.folder','Contraer árbol de carpetas {0}');page.bundle.addKey('dragdrop.accessible.error.chooseOption','Seleccione primero un elemento.');page.bundle.addKey('dragdrop.accessible.empty','No hay elementos disponibles para reposicionarlos.');page.bundle.addKey('dragdrop.accessible.complete','Los elementos se han vuelto a ordenar.');page.bundle.addKey('dragdrop.accessible.complete.nochange','No se han ordenado los cambios realizados.');page.bundle.addKey('closeStr','Cerrar');page.bundle.addKey('moreOptionsStr','Haga clic para ver opciones');page.bundle.addKey('hiddenStr','Este enlace está oculto para los estudiantes');page.bundle.addKey('emptyStr','Este enlace no tiene contenido');page.bundle.addKey('entryPointChangeConfirmStr','El punto de entrada cambiará al siguiente contenido disponible');page.bundle.addKey('subheaderColonStr','Subcabecera: {0}');page.bundle.addKey('confirmQuickEnrollStr','Se le otorgará el rol: {0}. ¿Desea continuar?');page.bundle.addKey('enterSearchKeyStr','Introducir criterios de búsqueda.');page.bundle.addKey('courseWelcomePageLbTitle','Guía de configuración rápida');page.bundle.addKey('expandCollapse.expand.section.nocolon','Expandir');page.bundle.addKey('expandCollapse.collapse.section.nocolon','Contraer');page.bundle.addKey('expandCollapse.expand.section.param','Expandir {0}');page.bundle.addKey('expandCollapse.collapse.section.param','Contraer {0}');page.bundle.addKey('breadcrumbs.expand','Haga clic para expandir la ruta de navegación');</script>
+  <script type="text/javascript">
+      Event.observe(window, 'load', function() {
+        displayMathImgInline( document.getElementById('content_listContainer').getElementsByTagName('img') );
+      });
+    </script>
+  
+  <script type="text/javascript">
+    <!--
+    function launch( urlString )
+    {
+        // If the test was opened in a new window, close the window when the OK button is clicked on this review page.      
+        if ( window.name == "_blank" )
+        {
+            window.close();
+        }
+
+        // else direct the user to the parent of this page      
+        document.location = urlString + "&outcome_id=&outcome_definition_id=";  
+    }
+    -->
+</script>
+
+  <script type="text/javascript">
+   var course_id = "_29723_1";
+   var courseTitle = "2022-23: INGENIERÍA DEL SOFTWARE AVANZADA (3A_G581)";
+   var confirmDeleteMenuItemMsg = "¿Confirma que desea borrar este elemento?";
+   var confirmQuickUnenrollMsg = "Se eliminarán todos los datos de usuarios creados mientras se realizaba la inscripción rápida en este curso. ¿Desea continuar?";
+   var confirmQuickEnrollMsg = "Se le otorgará el rol: Profesor. ¿Desea continuar?";
+   var inNewWindow = false;
+   var theCourseMenu;
+ </script>
+ 
+  <script type="application/javascript">
+
+      function showTooltip() {
+				var tooltipBtn = '<input class="submit tooltipButton" type="submit" role="button"' +
+												 'value="Entendido" id="tooltipButton" onclick="removeTooltip()" } />';
+				if ( $j( "#ftueTooltip" ) ) {
+					if ( $j( "#tooltipButton" ) ) $j( "#tooltipButton" ).remove();
+					$j( "#ftueTooltip" ).append( tooltipBtn );
+				}
+
+      	if ( $j( ".global-nav-bar-wrap-mobile-nav" ).css('visibility') === 'visible' ) {
+					$j( ".global-nav-bar-wrap-mobile-nav" ).prepend( $j( "#ftueTooltip" ) );
+				} else {
+					$j( "#global-nav" ).append( $j( "#ftueTooltip" ) );
+				}
+        $j( "#ftueTooltip" ).css('visibility', 'visible');
+      }
+
+			function removeTooltip() {
+				if ( $j( '#ftueTooltip' ) ) {
+					$j( '#ftueTooltip' ).remove();
+				}
+			}
+
+			function openFtue(title, bodyText, buttonText, redirectUrl) {
+				if ( redirectUrl ) {
+					var contents = '<div id="ftueLightboxWrapper">' +
+												 '<span class="ftueTitle" >' + title + '</span>' +
+												 '<img class="ftueImage" src="/images/ci/ftue/AssistPromoModal.png"/>' +
+												 '<span class="ftueText" >' + bodyText + '</span>' +
+												 '</div>' +
+												 '<div id="ftueFooter">' +
+												 '<input class="submit ftueButton" type="submit" role="button" ' +
+												 'value="' + buttonText + '" onclick=\'window.location="' + redirectUrl + '"\' />' +
+												 '</div>';
+
+					var lb = new lightbox.Lightbox(
+						{
+							lightboxId: 'ftueLightbox',
+							contents: contents,
+							closeOnBodyClick: false,
+							onClose: 'showTooltip()'
+						} );
+					lb.open();
+				}
+			}
+
+			
+			if ( false )
+			{
+				var redirect = "/webapps/bb-social-learning-BB5d1f8301cf6a3/execute/mybb?cmd=display&toolId=LTI_LAUNCH_PLUGIN_____bbAssist--B";
+				openFtue('Presentamos\x20Assist', 'Assist\x20es\x20el\x20centro\x20para\x20el\x20desempe\xF1o\x20exitoso\x20de\x20los\x20estudiantes\x20que\x20re\xFAne\x20los\x20recursos\x20del\x20campus\x20y\x20en\x20l\xEDnea.\x20Est\xE1\x20disponible\x20en\x20el\x20escritorio\x20y\x20desde\x20cualquier\x20lugar\x20con\x20la\x20aplicaci\xF3n\x20m\xF3vil\x20de\x20Blackboard.',
+					'Explorar\x20Assist', redirect)
+			}
+
+		</script>
+	
+  <script type="text/javascript">
+    page.bundle.addKey('globalnav.menu.expand','Expandir\x20navegaci\xF3n\x20global');
+    page.bundle.addKey('globalnav.menu.collapse','Contraer\x20navegaci\xF3n\x20global');
+
+    function insertSkipLinkAfterBodyStart(referenceNode, newNode, linkContent)
+    {
+      if( top === self )
+      {
+        /* Evaluates if the page is not been loaded inside Iframe,
+        only attach skip-link in original view, not Ultra, because ultra has his own skip link. */
+        referenceNode.parentNode.insertBefore( newNode, referenceNode );
+        newNode.innerHTML = linkContent;
+      }
+    }
+
+    var skipLink = new Element('a',{id:'skip-to-content', href: '#content', tabIndex: '1'});
+    var learnBody = document.body.firstChild;
+    var linkContent = 'Ir\x20al\x20contenido';
+    this.insertSkipLinkAfterBodyStart(learnBody, skipLink, linkContent);
+  </script>
+  
+  <script type="text/javascript">
+    page.bundle.addKey('quick_links.link.title','Navegar\x20a\x20elemento\x20\x7B1\x7D\x20de\x20tipo\x20\x7B2\x7D\x20en\x20marco\x20\x7B0\x7D');
+    page.bundle.addKey('quick_links.lightbox_title','Enlaces\x20r\xE1pidos');
+    page.bundle.addKey('quick_links.link_title','Abrir\x20enlaces\x20r\xE1pidos');
+    page.bundle.addKey('quick_links.hotkey.shift','May\xFAs');
+    page.bundle.addKey('quick_links.hotkey.control','Ctrl');
+    page.bundle.addKey('quick_links.hotkey.alt','Alt');
+    page.bundle.addKey('quick_links.hotkey.combination_divider','\x2B');
+  </script>
+  
+  <script type="text/javascript">quickLinks.initialize( [ 'null' ] );</script>
+ 
+   <script type="text/javascript">
+   FastInit.addOnLoad( function()
+   {
+            if ( window.DWREngine )
+       {
+        try {DWREngine.beginBatch();} catch(ignore) {}
+       } 
+                bbSessionActivityTimer.startTimer(10440000, '7a0ca01f-05e8-478a-939b-9b9549c98610');
+                                                             page.decoratePageBanner();
+                                                             new genericList.CheckboxRadioController("content_listContainer");
+                                                             new page.PageHelpToggler(false, 'La ayuda está activada. Haga clic para ocultar la ayuda de la página.', 'La ayuda está desactivada. Haga clic para mostrar la ayuda de la página.', false );
+                                                             breadcrumbs.rightMostNavItem = 'null';
+                                                             breadcrumbs.rightMostParentURL = '/webapps/blackboard/content/listContent.jsp?course_id=_29723_1&content_id=_2230179_1&mode=reset';
+                                                             new page.PageMenuToggler(true,'courseMenuToggle_29723_1', true);
+                                                             courseMenu.nonceKey = 'blackboard.platform.security.NonceUtil.nonce.ajax';
+                                                             courseMenu.nonceValue = '7a0ca01f-05e8-478a-939b-9b9549c98610';
+                                                             new page.PaletteController('courseMenuPalette', 'courseMenu_link', false, false);
+                                                             new page.ItemExpander('mygroups._103573_1_groupExpanderLink', 'mygroups._103573_1_groupContents', 'Expandir', 'Contraer', true, '/webapps/bb-group-mgmt-LEARN/execute/group/getGroupMenuItems', 'course_id=_29723_1&group_id=_103573_1&newWindow=false&openInParentWindow=false', 'Expandir Grupo tarde 15-17  8','Contraer Grupo tarde 15-17  8');
+                                                             new page.PaletteController('myGroups', 'myGroups_link', false, false);
+                                                             theCourseMenu = new courseMenu.CourseMenu('/webapps/blackboard/execute/doCourseMenuAction', '/webapps/blackboard/execute/getCourseMenuContextMenu');
+                                                             if (typeof(initEditors) == 'function') { initEditors(); }; if ( typeof com !== 'undefined' ) { com.wiris.js.JsPluginViewer.parseDocument( true ); }; 
+                                                             if (window['org'] && window['org']['owasp']) { org.owasp.esapi.ESAPI.initialize(); }; 
+                                                             AllyIntegration.initJWT('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJBTExZIiwic3ViIjoiQUxMWV9UT0tFTiIsImZpbGVJZHMiOltdLCJjb3Vyc2VSb2xlIjoidW5wcml2aWxlZ2VkIiwiaXNzIjoiNko0Mm5KVnc5RkFFbnRiMUZUWFlRNU44REpSZFd2RGgiLCJyaWNoQ29udGVudElkcyI6W10sImV4cCI6MTY2NzU4MDE4MywiaWF0IjoxNjY3NTc5ODgzLCJjb3Vyc2VJZCI6Il8yOTcyM18xIiwidXNlcklkIjoiXzIwNDI3OV8xIn0.7lMWIh_GsgfA9gB6V0E11Y8MQyudJOlOmDZcnRvdAKk');
+                                                             AllyIntegration.initAllyJSConfigs('prod-eu-central-1.ally.ac','882');
+                                                             jQuery.getScript('//' + window.ALLY_CFG.baseUrl + '/integration/learn/ally.js');
+                                                             quickLinks.createHelper();
+                                                                  if ( window.DWREngine )
+       {
+         try {DWREngine.endBatch();} catch(ignore) {}
+       }
+                          BrowserSpecific.registerListeners();
+               });
+   </script>
+       <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="testa_files/js.js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'UA-107525313-1');
+</script>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"errorBeacon":"bam.nr-data.net","licenseKey":"232bf20b67","agent":"","beacon":"bam.nr-data.net","applicationTime":276,"applicationID":"370031624","transactionName":"M1NbN0oCDxFYU0JaXAoZahdKFhUReFNCWlwKGVsPWQAKAFZRRFcdE1NbAkgTEkxbXFdQWAZZWBFcTQINTEJFVl4BWExNSxcTF01DGHBcEURKBnUGDxd9WUVDXwVPeABMCg4M","queueTime":0}</script>
+
+
+<div role="log" aria-live="assertive" aria-relevant="additions" class="ally-helper-hidden-accessible"></div></body></html>

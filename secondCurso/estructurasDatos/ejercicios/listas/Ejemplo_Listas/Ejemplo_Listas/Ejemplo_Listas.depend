@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1607615943 source:c:\users\josemiguel\documents\uah\curso_20_21\lab_eedd\ejemplos_cbp\clase111220_listas\main.cpp
+	"listas.h"
+	<iostream>
+
+1607615849 c:\users\josemiguel\documents\uah\curso_20_21\lab_eedd\ejemplos_cbp\clase111220_listas\listas.h
+	<iostream>
+
+1607615979 source:c:\users\josemiguel\documents\uah\curso_2021_2022\labeedd\ejemplos_cbp\clase111220_listas\listas.cpp
+	"listas.h"
+
+1607615849 c:\users\josemiguel\documents\uah\curso_2021_2022\labeedd\ejemplos_cbp\clase111220_listas\listas.h
+	<iostream>
+
+1607615943 source:c:\users\josemiguel\documents\uah\curso_2021_2022\labeedd\ejemplos_cbp\clase111220_listas\main.cpp
+	"listas.h"
+	<iostream>
+
+1607615979 source:c:\users\josemiguel\documents\uah\curso_2021_2022\labeedd\ejemplos_cbp\ejemplo_listas\listas.cpp
+	"listas.h"
+
+1607615849 c:\users\josemiguel\documents\uah\curso_2021_2022\labeedd\ejemplos_cbp\ejemplo_listas\listas.h
+	<iostream>
+
+1607615943 source:c:\users\josemiguel\documents\uah\curso_2021_2022\labeedd\ejemplos_cbp\ejemplo_listas\main.cpp
+	"listas.h"
+	<iostream>
+

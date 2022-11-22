@@ -3,6 +3,7 @@
 #include <cmath>
 #include <math.h>
 #include <string>
+
 using namespace std;
 
 void punto2(){
@@ -52,9 +53,9 @@ void punto4(){
 
 int main(){
 
-        /* punto2(); */
+        punto2();
         /* punto3(); */
-        punto4();
+        /* punto4(); */
         return 0;
 }
 
