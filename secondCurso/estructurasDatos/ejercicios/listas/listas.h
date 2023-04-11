@@ -25,7 +25,10 @@ class Lista {
         ~Lista();
         void insertarNodoAlInicio(int);
         void insertarNodoAlFinal(int);
-        void insertarNodoIntermedio(int,int);
+        void insertarNodoIntermedio(int, int);
+        void borrarNodoInicio();
+        void borrarNodoFin();
+        void borrarNodoPosicion(int);
         void borrarNodo(int);
         bool listaVacia();
         void mostrarLista();

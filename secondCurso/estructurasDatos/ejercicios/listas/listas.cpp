@@ -71,29 +71,80 @@ void Lista::insertarNodoIntermedio(int v, int posicion) {
     }
 }
 
+void Lista::borrarNodoInicio(){
+
+        pnodo sig;
+        actual = cabeza;
+
+        if(actual){
+                sig = actual->siguiente;
+                cabeza = sig;
+        }
+        delete actual;
+}
+
+void Lista::borrarNodoFin(){
+        pnodo anterior;
+        actual = cabeza;
+        if(actual){
+                while (actual->siguiente != NULL){
+                        anterior=actual;
+                        actual=actual->siguiente;
+                }
+                cout << "Actual : " << actual->valor << endl;
+                cout << "Anterior : " << anterior->valor << endl;
+                anterior->siguiente = NULL;
+                actual->siguiente = NULL;
+                fin = anterior;
+        }
+        delete actual;
+}
+
 void Lista::borrarNodo(int v) {
     pnodo anterior;
 
     actual = cabeza;
 
-    while ((actual->valor!=v) && (actual->siguiente!=NULL))
-    {
-        anterior=actual;
-        actual=actual->siguiente;
-    }
-
-    if (actual==cabeza) // Primer elemento
-        cabeza = actual->siguiente;
-    else
-    {
-        anterior->siguiente = actual->siguiente;
-        if (actual==fin)
-        {
-            fin=anterior;
+    if(actual){
+        while ((actual->valor!=v) && (actual->siguiente!=NULL)){
+                anterior=actual;
+                actual=actual->siguiente;
         }
+        if (actual==cabeza){ // Primer elemento
+                cabeza = actual->siguiente;
+        }else{
+                anterior->siguiente = actual->siguiente;
+                if (actual==fin)
+                {
+                    fin=anterior;
+                }
+            }
+        actual->siguiente=NULL;
     }
-    actual->siguiente=NULL;
     delete actual;
+}
+
+// Funciona a medias jaja, cuando tiene 3 nodos y le doy a eliminar el nodo 1
+// en ese caso funciona, en los demás no.
+void Lista::borrarNodoPosicion(int posicion){
+        actual = cabeza;
+        pnodo anterior;
+        int i = 0;
+
+        if(cabeza){
+                while(i != posicion && actual->siguiente != NULL){
+                        anterior = actual;
+                        actual = actual->siguiente;
+                        i++;
+                }
+
+                //Solo hay 1 elemento
+                if(cabeza == actual){
+                        cabeza = actual->siguiente;
+                }else{
+                        //si entra aquí es porque "actual" ha avanzado en el nodo
+                }
+        }
 }
 
 bool Lista::listaVacia(){
